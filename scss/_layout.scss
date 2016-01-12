@@ -38,7 +38,7 @@ html, body {
 	display: flex;
 	font-size: $small-text;
 	a {
-		color: inherit;
+		@extend a.nostyle;
 	}
 	.dev-box {
 		padding-top: 5px;

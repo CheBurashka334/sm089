@@ -2478,10 +2478,6 @@ html, body {
   display: flex;
   font-size: 12px;
 }
-/* line 40, scss/_layout.scss */
-.footer a, .footer .btn-link {
-  color: inherit;
-}
 /* line 43, scss/_layout.scss */
 .footer .dev-box {
   padding-top: 5px;
@@ -3417,7 +3413,7 @@ span.badge.new:after {
 
 /* line 1, scss/components/_buttons.scss */
 .btn {
-  display: inline-block;
+  text-decoration: none;
   position: relative;
   font-family: inherit;
   font-size: 16px;
@@ -3734,97 +3730,99 @@ ul.horizontal > li, .horizontal-menu > li, .filter .filter-list > li, ol.horizon
 
 /* line 108, scss/components/_typography.scss */
 a, .btn-link {
-  text-decoration: none;
+  color: #c0392b;
   -webkit-tap-highlight-color: transparent;
 }
-/* line 115, scss/components/_typography.scss */
-a.nostyle, .nostyle.btn-link, .menu .menu-link, .main-menu .parent > .submenu .menu-link, .mobile-menu .menu-link,
+/* line 114, scss/components/_typography.scss */
+a.nostyle, .footer a, .footer .btn-link, .nostyle.btn-link, .pagin-list .item-page .pagin-link, .menu .menu-link, .main-menu .parent > .submenu .menu-link, .mobile-menu .menu-link,
 .menu .submenu-link,
 .main-menu .parent > .submenu .submenu-link,
 .mobile-menu .submenu-link {
   color: inherit;
+  text-decoration: none;
 }
 /* line 118, scss/components/_typography.scss */
 a.img-link, .img-link.btn-link {
   display: block;
   border: 0;
+  text-decoration: none;
 }
 
-/* line 125, scss/components/_typography.scss */
+/* line 126, scss/components/_typography.scss */
 h1, .box-title, h2, .card-title, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.5;
 }
-/* line 128, scss/components/_typography.scss */
+/* line 129, scss/components/_typography.scss */
 .divider + h1, .divider + .box-title, .divider + h2, .divider + .card-title, .divider + h3, .divider + h4, .divider + h5, .divider + h6 {
   margin-top: 1em;
 }
 
-/* line 134, scss/components/_typography.scss */
+/* line 135, scss/components/_typography.scss */
 h1 a, .box-title a, h1 .btn-link, .box-title .btn-link, h2 a, .card-title a, h2 .btn-link, .card-title .btn-link, h3 a, h3 .btn-link, h4 a, h4 .btn-link, h5 a, h5 .btn-link, h6 a, h6 .btn-link {
   font-weight: inherit;
   color: inherit;
   text-decoration: none;
 }
-/* line 138, scss/components/_typography.scss */
+/* line 139, scss/components/_typography.scss */
 h1 a:hover, .box-title a:hover, h1 .btn-link:hover, .box-title .btn-link:hover, h2 a:hover, .card-title a:hover, h2 .btn-link:hover, .card-title .btn-link:hover, h3 a:hover, h3 .btn-link:hover, h4 a:hover, h4 .btn-link:hover, h5 a:hover, h5 .btn-link:hover, h6 a:hover, h6 .btn-link:hover {
   text-decoration: underline;
 }
 
-/* line 142, scss/components/_typography.scss */
+/* line 143, scss/components/_typography.scss */
 p a:hover, p .btn-link:hover {
   text-decoration: underline;
 }
 
-/* line 145, scss/components/_typography.scss */
+/* line 146, scss/components/_typography.scss */
 h1, .box-title {
   font-size: 22px;
   margin: 1.4em 0 0.7em;
 }
 @media only screen and (min-width: 651px) {
-  /* line 145, scss/components/_typography.scss */
+  /* line 146, scss/components/_typography.scss */
   h1, .box-title {
     font-size: 28px;
   }
 }
 
-/* line 152, scss/components/_typography.scss */
+/* line 153, scss/components/_typography.scss */
 h2, .card-title {
   font-size: 18px;
   margin: 1em 0;
 }
 @media only screen and (min-width: 651px) {
-  /* line 152, scss/components/_typography.scss */
+  /* line 153, scss/components/_typography.scss */
   h2, .card-title {
     margin: 3em 0 1em;
   }
 }
 
-/* line 159, scss/components/_typography.scss */
+/* line 160, scss/components/_typography.scss */
 h3 {
   font-size: 14px;
   margin: 3em 0 1.3em;
 }
 
-/* line 163, scss/components/_typography.scss */
+/* line 164, scss/components/_typography.scss */
 h4 {
   font-size: 14px;
   margin: 1em 0;
 }
 
-/* line 167, scss/components/_typography.scss */
+/* line 168, scss/components/_typography.scss */
 h5 {
   font-size: 14px;
   margin: 1em 0;
 }
 
-/* line 171, scss/components/_typography.scss */
+/* line 172, scss/components/_typography.scss */
 h6 {
   font-size: 14px;
   margin: 1em 0;
 }
 
-/* line 176, scss/components/_typography.scss */
+/* line 177, scss/components/_typography.scss */
 .page-title {
   font-size: 18px;
   line-height: 22px;
@@ -3832,44 +3830,40 @@ h6 {
   text-transform: uppercase;
 }
 @media only screen and (min-width: 651px) {
-  /* line 176, scss/components/_typography.scss */
+  /* line 177, scss/components/_typography.scss */
   .page-title {
     font-size: 34px;
     line-height: 46px;
   }
 }
 
-/* line 186, scss/components/_typography.scss */
+/* line 187, scss/components/_typography.scss */
 .box-title {
   text-align: center;
 }
-/* line 189, scss/components/_typography.scss */
-[class^='-box'] .box-title {
-  margin: 1em auto 0.5em;
-}
 
 @media only screen and (max-width: 650px) {
-  /* line 193, scss/components/_typography.scss */
+  /* line 191, scss/components/_typography.scss */
   .card-title {
     font-weight: 100;
   }
 }
-/* line 198, scss/components/_typography.scss */
+/* line 196, scss/components/_typography.scss */
 .card .card-title {
   margin: 1em auto;
 }
 
-/* line 204, scss/components/_typography.scss */
+/* line 202, scss/components/_typography.scss */
 .img-center {
   margin: 12.5px auto 15px;
   display: block;
 }
-/* line 207, scss/components/_typography.scss */
+/* line 205, scss/components/_typography.scss */
 .img-center.s-fullwidth, .img-center.fullwidth {
   margin-left: calc(-1*(100vw - 100%)/2);
 }
 
-/* line 212, scss/components/_typography.scss */
+/* line 210, scss/components/_typography.scss */
 .img-circle {
   border-radius: 50%;
   border: 1px solid;
@@ -3888,32 +3882,32 @@ h6 {
 }
 
 @media only screen and (min-width: 651px) {
-  /* line 220, scss/components/_typography.scss */
+  /* line 218, scss/components/_typography.scss */
   .img-center.s-fullwidth {
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 224, scss/components/_typography.scss */
+  /* line 222, scss/components/_typography.scss */
   .img-center.m-fullwidth {
     margin-left: calc(-1*(100vw - 100%)/2);
   }
 
-  /* line 227, scss/components/_typography.scss */
+  /* line 225, scss/components/_typography.scss */
   .img-left {
     float: left;
     margin-right: 10px;
     margin-bottom: 10px;
   }
 
-  /* line 232, scss/components/_typography.scss */
+  /* line 230, scss/components/_typography.scss */
   .img-right {
     float: right;
     margin-left: 10px;
     margin-bottom: 10px;
   }
 
-  /* line 237, scss/components/_typography.scss */
+  /* line 235, scss/components/_typography.scss */
   .img-left + p,
   .img-right + p {
     margin-top: 0;
@@ -3921,32 +3915,32 @@ h6 {
   }
 }
 @media only screen and (min-width: 991px) {
-  /* line 244, scss/components/_typography.scss */
+  /* line 242, scss/components/_typography.scss */
   .img-center.s-fullwidth,
   .img-center.m-fullwidth {
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 249, scss/components/_typography.scss */
+  /* line 247, scss/components/_typography.scss */
   .img-center.l-fullwidth {
     margin-left: calc(-1*(100vw - 100%)/2);
   }
 
-  /* line 252, scss/components/_typography.scss */
+  /* line 250, scss/components/_typography.scss */
   .img-left {
     margin-right: 15px;
     margin-bottom: 25px;
   }
 
-  /* line 256, scss/components/_typography.scss */
+  /* line 254, scss/components/_typography.scss */
   .img-right {
     margin-left: 15px;
     margin-bottom: 25px;
   }
 }
 @media only screen and (min-width: 651px) {
-  /* line 262, scss/components/_typography.scss */
+  /* line 260, scss/components/_typography.scss */
   .cols-2 {
     -webkit-column-count: 2;
        -moz-column-count: 2;
@@ -3955,13 +3949,13 @@ h6 {
        -moz-column-gap: 50px;
             column-gap: 50px;
   }
-  /* line 266, scss/components/_typography.scss */
+  /* line 264, scss/components/_typography.scss */
   .cols-2 p:first-child {
     margin-top: 0;
   }
 }
 @media only screen and (min-width: 991px) {
-  /* line 262, scss/components/_typography.scss */
+  /* line 260, scss/components/_typography.scss */
   .cols-2 {
     -webkit-column-gap: 100px;
        -moz-column-gap: 100px;
@@ -3969,13 +3963,13 @@ h6 {
   }
 }
 
-/* line 276, scss/components/_typography.scss */
+/* line 274, scss/components/_typography.scss */
 table {
   width: 100%;
   font-weight: normal;
   margin: 2.8em auto 3.3em;
 }
-/* line 280, scss/components/_typography.scss */
+/* line 278, scss/components/_typography.scss */
 table th, table td {
   padding: 3%;
   border: 1px solid #fff;
@@ -3983,31 +3977,31 @@ table th, table td {
   text-align: center;
 }
 @media only screen and (min-width: 991px) {
-  /* line 280, scss/components/_typography.scss */
+  /* line 278, scss/components/_typography.scss */
   table th, table td {
     padding: 30px;
   }
 }
-/* line 288, scss/components/_typography.scss */
+/* line 286, scss/components/_typography.scss */
 table th:first-child, table td:first-child {
   text-align: left;
   width: 38.8%;
 }
-/* line 292, scss/components/_typography.scss */
+/* line 290, scss/components/_typography.scss */
 table th:last-child, table td:last-child {
   border-right-width: 0;
 }
-/* line 296, scss/components/_typography.scss */
+/* line 294, scss/components/_typography.scss */
 table thead th {
   font-weight: normal;
   background: #c54a3d;
   color: #fff;
 }
-/* line 301, scss/components/_typography.scss */
+/* line 299, scss/components/_typography.scss */
 table tr:nth-child(odd) td {
   background: #ecf0f1;
 }
-/* line 304, scss/components/_typography.scss */
+/* line 302, scss/components/_typography.scss */
 table tr:nth-child(even) td {
   background: #cfd8dc;
 }
@@ -4591,22 +4585,22 @@ select option {
   vertical-align: middle;
   color: #000;
 }
-/* line 29, scss/components/_pagination.scss */
+/* line 30, scss/components/_pagination.scss */
 .pagin-list .item-page:hover a, .pagin-list .item-page:hover .btn-link {
   color: #c0392b;
 }
-/* line 32, scss/components/_pagination.scss */
+/* line 33, scss/components/_pagination.scss */
 .pagin-list .item-page.active a, .pagin-list .item-page.active .btn-link {
   color: #fff;
   background: #c0392b;
   cursor: default;
 }
-/* line 37, scss/components/_pagination.scss */
+/* line 38, scss/components/_pagination.scss */
 .pagin-list .item-page.disabled a, .pagin-list .item-page.disabled .btn-link {
   cursor: default;
   color: #989898;
 }
-/* line 43, scss/components/_pagination.scss */
+/* line 44, scss/components/_pagination.scss */
 .pagin-list .prev-page,
 .pagin-list .next-page {
   display: inline-block;
@@ -4617,46 +4611,46 @@ select option {
   width: 2em;
   height: 2em;
 }
-/* line 52, scss/components/_pagination.scss */
+/* line 53, scss/components/_pagination.scss */
 .pagin-list .prev-page .pagin-link,
 .pagin-list .next-page .pagin-link {
   display: block;
   padding: 6px;
   height: 100%;
 }
-/* line 57, scss/components/_pagination.scss */
+/* line 58, scss/components/_pagination.scss */
 .pagin-list .prev-page .icon,
 .pagin-list .next-page .icon {
   fill: #000;
   width: 100%;
   height: 100%;
 }
-/* line 62, scss/components/_pagination.scss */
+/* line 63, scss/components/_pagination.scss */
 .pagin-list .prev-page .disabled,
 .pagin-list .next-page .disabled {
   cursor: default;
 }
-/* line 64, scss/components/_pagination.scss */
+/* line 65, scss/components/_pagination.scss */
 .pagin-list .prev-page .disabled .icon,
 .pagin-list .next-page .disabled .icon {
   fill: #989898;
 }
-/* line 68, scss/components/_pagination.scss */
+/* line 69, scss/components/_pagination.scss */
 .pagin-list .prev-page:hover .icon,
 .pagin-list .next-page:hover .icon {
   fill: #c0392b;
 }
-/* line 72, scss/components/_pagination.scss */
+/* line 73, scss/components/_pagination.scss */
 .pagin-list .prev-page .icon {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
 }
-/* line 75, scss/components/_pagination.scss */
+/* line 76, scss/components/_pagination.scss */
 .pagin-list .prev-page {
   margin-left: 0;
 }
-/* line 78, scss/components/_pagination.scss */
+/* line 79, scss/components/_pagination.scss */
 .pagin-list .next-page {
   margin-right: 0;
 }
@@ -5170,7 +5164,11 @@ select option {
   margin: 0 auto 1em;
 }
 @media only screen and (min-width: 651px) {
-  /* line 9, scss/components/_subscribe.scss */
+  /* line 1, scss/components/_subscribe.scss */
+  .subscribe-box {
+    margin-top: 50px;
+  }
+  /* line 10, scss/components/_subscribe.scss */
   .subscribe-box .box-text {
     font-size: 18px;
   }
@@ -5388,6 +5386,73 @@ select option {
   .filter {
     margin-top: 20px;
     margin-bottom: 30px;
+  }
+}
+
+/* line 1, scss/components/_question.scss */
+.question {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 651px) {
+  /* line 1, scss/components/_question.scss */
+  .question {
+    margin-bottom: 20px;
+  }
+}
+/* line 8, scss/components/_question.scss */
+.question .item-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+@media only screen and (min-width: 651px) {
+  /* line 8, scss/components/_question.scss */
+  .question .item-title {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 651px) {
+  /* line 8, scss/components/_question.scss */
+  .question .item-title {
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  /* line 21, scss/components/_question.scss */
+  .question .item-title,
+  .question .item-text {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media only screen and (min-width: 991px) {
+  /* line 28, scss/components/_question.scss */
+  .question .item-title,
+  .question .item-text {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+/* line 35, scss/components/_question.scss */
+.question-list {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 651px) {
+  /* line 35, scss/components/_question.scss */
+  .question-list {
+    margin-top: 30px;
+  }
+}
+@media only screen and (min-width: 991px) {
+  /* line 35, scss/components/_question.scss */
+  .question-list {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
 

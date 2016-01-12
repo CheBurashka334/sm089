@@ -6,6 +6,7 @@
 		margin: 0 auto 1em;
 	}
 	@media #{$medium-and-up}{
+		margin-top: 50px;
 		.box-text {
 			font-size: $xbig-text;
 		}

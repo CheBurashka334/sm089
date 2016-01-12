@@ -57,7 +57,7 @@
 				<div class="card-icon center-align">
 					<img src="images/content/develop.png"/>
 				</div>
-				<div class="card-title">Строительные и отделочные работы</div>
+				<div class="card-title center-align">Строительные и отделочные работы</div>
 				<div class="cardm-text hide-on-small-only big-text">
 					<p>При строительстве загородного дома и коттеджа, а так же  ремонте  здания важную роль отводят проведению наружных и внутренних отделочных работ.</p>
 				</div>
