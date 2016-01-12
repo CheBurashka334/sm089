@@ -1,0 +1,94 @@
+// layout
+html, body {
+	height: 100%;
+	background: #fff;
+}
+.layout,
+.page {
+	min-height: 100%;
+}
+.workarea-wrapper {
+	min-height: calc(100vh - 195px);
+	padding: 1px 0;
+	margin-top: -1px;
+	margin-bottom: -1px;
+	@media #{$large-and-up}{
+		min-height: calc(100vh - 202px);
+	}
+}
+
+.page {
+	overflow-x: hidden;
+}
+.page-empty {
+	padding: 20vh 0;
+}
+
+@import "components/page-aside";
+@import 'components/header';
+
+// footer
+.footer-wrapper {
+	background: color('gray', 'dark');
+	color: #fff;
+}
+.footer {
+	border-top: 1px solid color('bluegray', 'xlight');
+	padding: 15px 0;
+	display: flex;
+	font-size: $small-text;
+	a {
+		color: inherit;
+	}
+	.dev-box {
+		padding-top: 5px;
+		text-align: right;
+	}
+	.soc-box {
+		text-align: right;
+		font-size: $big-text;
+		vertical-align: middle;
+		padding-top: 3px;
+		.soc-link {
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			margin: 0 5px;
+			vertical-align: middle;
+			&:first-of-type {
+				margin-left: 20px;
+			}
+			.icon {
+				fill: #fff;
+			}
+			&:hover .icon {
+				fill: color('red', 'light');
+			}
+		}
+	}
+	@media #{$medium-and-up}{
+		padding: 30px 0;
+		font-size: $small-text;
+		.logo-box {
+			height: 35px;
+			img {
+				height: 100%;
+			}
+		}
+		.dev-box {
+			font-size: $base-text;
+			padding-left: 6.8%;
+			text-align: left;
+		}
+	}
+	@media #{$large-and-up}{
+		padding: 20px 0 30px;
+		.logo-box {
+			height: 38px;
+		}
+		.dev-box {
+			padding: 10px 0 0;
+			text-align: right;
+		}
+	}
+}

@@ -1,0 +1,38 @@
+// filters
+.filter {
+	margin-top: 15px;
+	margin-bottom: 20px;
+	.filter-list {
+		@extend ul.nostyle;
+		@extend ul.horizontal;
+		text-align: center;
+		font-size: 0;
+		letter-spacing: 0;
+		li {
+			margin-right: 1px;
+			letter-spacing: normal;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		label {
+			display: block;
+			padding: 19px 10px;
+			cursor: pointer;
+			font-size: $xbig-text;
+			vertical-align: middle;
+			background: color('bluegray', 'xlight');
+			color: color('gray', 'medium');
+			@media #{$large-and-up}{
+				padding: 19px 20px;
+			}
+		}
+		input[type="radio"]:checked + label {
+			background: color('bluegray', 'medium');
+		}
+	}
+	@media #{$medium-and-up}{
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+} 

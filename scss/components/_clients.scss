@@ -1,0 +1,43 @@
+// clients
+.clients {
+	margin-bottom: $gutter-width*3;
+	.clients-list {
+		border: 1px solid color('border','light');
+		border-bottom: 0;
+		@media #{$medium-and-up}{
+			border-right: 0;
+		}
+		@media #{$large-and-up}{
+			margin-top: $gutter-width*4;
+			margin-bottom: $gutter-width*4;
+		}
+	}
+	.client-item {
+		height: 280px;
+		border-bottom:  1px solid color('border','light');
+		@media #{$medium-and-up}{
+			border-right: 1px solid color('border','light');
+		}
+		.clients-logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 100%;
+		}
+		.hover-box {
+			opacity: 0;
+			will-change: opacity;
+			transform: translateZ(0);
+			transition: opacity .3s ease;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		&:hover .hover-box {
+			opacity: 1;
+		}
+	}
+}

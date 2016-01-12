@@ -1,0 +1,13 @@
+.subscribe-box {
+	padding: 5px 0 20px;
+	margin-top: 20px;
+	.box-text {
+		font-size: $base-text;
+		margin: 0 auto 1em;
+	}
+	@media #{$medium-and-up}{
+		.box-text {
+			font-size: $xbig-text;
+		}
+	}
+}

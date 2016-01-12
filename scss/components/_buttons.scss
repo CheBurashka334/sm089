@@ -1,0 +1,153 @@
+.btn {
+	display: inline-block;
+	position: relative;
+	font-family: inherit;
+	font-size: 16px;
+	@extend .medium;
+	line-height: 38px;
+	height: 40px;
+	text-align: center;
+	border: 1px solid transparent;
+	vertical-align: middle;
+	padding: 0 $gutter-width*2;
+	transition: color .3s ease, background .3s ease, border-color .3s ease;
+	
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	
+	&:active,
+	&:focus {
+		outline: none;
+	}
+	
+	&.standart {
+		background: transparent;
+		color: #fff;
+		border-color: #fff;
+	}
+	
+	&.primary {
+		background: color('red', 'base');
+		border-color: color('red', 'base');
+		color: white;
+		.icon {
+			fill: white;
+		}
+		&:hover {
+			background: color('red', 'medium');
+			border-color: color('red', 'medium');
+		}
+	}
+	
+	&.standart-color {
+		background: transparent;
+		color: color('red', 'base');
+		border-color: color('red', 'base');
+		&:hover {
+			color: color('red', 'medium');
+			border-color: color('red', 'medium');
+		}
+	}
+	&.flat {
+		background: white;
+		border-color: white;
+		color: color('text', 'dark');
+	}
+	
+	&.medium-width {
+		width: 100%;
+		@media #{$medium-and-up}{
+			width: 165px;
+		}
+	}
+	&.big-width {
+		width: 100%;
+		@media #{$medium-and-up}{
+			width: 230px;
+		}
+		@media #{$large-and-up}{
+			width: 240px;
+		}
+	}
+	&.full-width {
+		width: 100%;
+	}
+	&.big {
+		line-height: 64px;
+		height: 66px;
+	}
+	&.small {
+		width: 60px;
+	}
+	&.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&.btn-icon {
+		background: transparent;
+		line-height: 100%;
+		border: 0;
+		padding: 2px;
+		&.primary {
+			background: color('red', 'base');
+		}
+	}
+	&.btn-with-icon {
+		.icon {
+			display: inline-block;
+			width: 25px;
+			height: 100%;
+			line-height: 100%;
+		}
+	}
+}
+
+.icon {
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+}
+.btn-menu,
+.btn-menu.btn-icon {
+	padding: 3px 0;
+	.icon {
+		fill: #fff;
+	}
+}
+.btn-more {
+	//margin-top: $gutter-width/2;	
+}
+.btn-close {
+	width: 17px;
+	height: 17px;
+	will-change: transform;
+	transform: rotate(0deg);
+	transition: transform .3s ease;	
+	.icon {
+		fill: color('red', 'base');
+	}
+	&:hover {
+		transform: rotate(90deg);
+	}
+}
+.btn-delete-from-card {
+	width: 17px;
+	height: 17px;
+	.icon {
+		fill: color('text', 'light');
+	}
+	&:hover .icon {
+		fill: color('red', 'base');
+	}
+}
+.btn-nostyle {
+	background: none;
+	border: 0;
+	padding: 0;
+}
+.btn-link {
+	@extend .btn-nostyle;
+	@extend a;
+}

@@ -1,0 +1,106 @@
+// features-box 
+.features-box {
+	margin-bottom: $gutter-width*4;
+	.feature-item {
+		padding: $gutter-width*3 $gutter-width*2;
+		margin-bottom: $gutter-width;
+		min-height: 280px;
+		@media #{$medium-only}{
+			min-height: 240px;
+		}
+		@media #{$large-and-up}{
+			padding: $gutter-width*3;
+			min-height: 320px;
+		}
+		&.primary {
+			color: #fff;
+		}
+		.item-title {
+			font-size: $xbig-text;
+			text-transform: uppercase;
+			margin: 0 0 $gutter-width*2;
+			@media #{$medium-only}, only screen and (width: 1024px) and(height: 768px) and (orientation: landscape){
+				font-size: 20px;
+			}
+		}
+		.item-text {
+			@media #{$medium-only}, only screen and (width: 1024px) and(height: 768px) and (orientation: landscape){
+				font-size: 12px;
+			}
+		}
+	}
+}
+.home-features-list {
+	margin-bottom: $gutter-width*3;
+	@media #{$medium-and-up}{
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+		flex-wrap: wrap;
+	}
+	.feature-item {
+		padding-bottom: $gutter-width*4;
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 5px;
+			background: #efc14e;
+		}
+		.item-title {
+			font-size: 20px;
+			@extend .medium;
+			margin: 1em 0 1rem;
+		}
+		@media #{$medium-only}{
+			padding-bottom: $gutter-width*2;
+			margin-bottom: $gutter-width*4;
+			&:after {
+				width: calc(100% - #{$gutter-width*3});
+			}
+			&:nth-child(odd) {
+				padding-right: $gutter-width*3;
+				&:after {
+					left: 0;
+				}
+			}
+			&:nth-child(even) {
+				padding-left: $gutter-width*3;
+				&:after {
+					left: auto;
+					right: 0;
+				}
+			}
+		}
+		@media #{$large-and-up}{
+			padding-bottom: $gutter-width*1;
+			margin-bottom: $gutter-width*5;
+			&:after {
+				width: calc(100% - #{$gutter-width*5});
+			}
+			&:nth-child(3n+1){
+				padding-right: $gutter-width*5;
+				&:after {
+					left: 0;
+				}
+			}
+			&:nth-child(3n+2){
+				padding-left: $gutter-width*3;
+				padding-right: $gutter-width*3;
+				&:after {
+					left: $gutter-width*2.5;
+				}
+			}
+			&:nth-child(3n+3){
+				padding-left: $gutter-width*5;
+				&:after {
+					left: auto;
+					right: 0;
+				}
+			}
+		}
+	}
+}

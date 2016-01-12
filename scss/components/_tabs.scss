@@ -1,0 +1,58 @@
+// tabs
+.tabs {
+	.tab-header {
+		box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+		background: white;
+		z-index: 2;
+	}
+	.tab-header-list {
+		@extend ul.nostyle;
+		@extend ul.horizontal;
+		padding: 0 $gutter-width/2;
+	}
+	.tab-header-item .tab-link {
+		display: block;
+		padding: $gutter-width + 4px $gutter-width $gutter-width + 3px;
+		@extend .small-text;
+		@extend .medium;
+		line-height: 1;
+		text-transform: uppercase;
+		color: color('text', 'dark');
+		&:after {
+			display: block;
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 3px;
+			background: color('primary', 'base');
+			transform: scale(0,1);
+			will-change: transform;
+			transition: transform .3s ease;
+		}
+	}
+	.tab-header-item.active .tab-link:after {
+		transform: scale(1);
+	}
+	.tab-content-item {
+		background: white;
+		padding: $gutter-width/2 0 $gutter-width*2.5;
+		position: absolute;
+		transform: scale(1,0);
+		overflow: hidden;
+		&.open {
+			position: relative;
+			transform: scale(1);
+		}
+		.container {
+			padding:0 $gutter-width/2;
+		}
+		.subtitle {
+			margin: 22px 0 25px;
+		}
+		p {
+			line-height: 24px;
+		}
+	}
+}

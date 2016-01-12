@@ -1,0 +1,25 @@
+// sale-box
+.sale-box {
+	background: url('images/pattern.jpg') top center repeat;
+	background-size: contain;
+	padding: $gutter-width*5.5 0 $gutter-width*6.5;
+	color: #fff;
+	@media #{$medium-and-up}{
+		padding: $gutter-width*4.5 0 $gutter-width*5;
+	}
+	.sale-box-title {
+		font-size: 39px;
+		@extend .bold;
+		margin-bottom: $gutter-width*1.5;
+		@media #{$medium-and-up}{
+			margin-bottom: $gutter-width*0;
+		}
+	}
+	.sale-box-text {
+		@extend .light;
+		font-size: 20px;
+		@media #{$medium-and-up}{
+			font-size: $xbig-text;
+		}
+	}
+}

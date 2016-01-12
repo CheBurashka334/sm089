@@ -1,0 +1,141 @@
+// search
+.header .search-box {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	.search-btn {
+		padding: 2px;
+		width: 20px;
+		height: 20px;
+		.icon {
+			transform: scale(-1,1);
+		}
+		@media #{$small-only}{
+			&.active .icon {
+				fill: color('primary','base');
+			}
+		}
+	}
+	.search-field-box {
+		position: absolute;
+		width: 100vw;
+		height: 40px;
+		top: 46px;
+		right: -28%;
+		background: color('primary','base');
+		border-color: color('primary','base');
+		border-bottom: 1px solid color('primary','base');
+		padding: 9px $gutter-width*2;
+		color: #fff;
+		display: none;
+		&.active {
+			display: block;
+		}
+		.tngl {
+			display: block;
+			position: absolute;
+			top: -10px;
+			right: 24px;
+			width: 20px;
+			height: 20px;
+			border-color: inherit;
+			border-style: solid;
+			border-width: 1px;
+			background: inherit;
+			transform: rotate(45deg);
+		}
+		.inputtext.search {
+			border: 0;
+			border-bottom: 1px solid rgba(255,255,255,.4);
+			height: 20px;
+			padding: 3px 0;
+			line-height: 14px;
+			color: inherit;
+			font-size: 12px;
+			background: none;
+		}
+		.textfield-placeholder {
+			color: inherit;
+			font-size: 12px;
+			top: 9px;
+			left: 20px;
+			font-style: italic;
+		}
+	}
+	@media #{$medium-and-up}{
+		&.active .icon {
+			fill: color('text','base');
+		}
+		.search-field-box {
+			color: color('text', 'base');
+			height: 90px;
+			width: 300px;
+			top: -33px;
+			left: 50px;
+			padding: 35px $gutter-width;
+			background: #fff;
+			border: none;
+			&:after {
+				display: none;
+			}
+			.inputtext.search {
+				width: 180px;
+				border-color: rgba(66,66,66,.2);
+			}
+			.textfield-placeholder {
+				top: 35px;
+				left: $gutter-width;
+			}
+		}
+	}
+	@media #{$large-and-up}{
+		.search-field-box {
+			width: 380px;
+		}
+	}
+	@media only screen and (min-width: #{$medium-screen}) and (max-width: #{$large-screen}){
+		.search-field-box {
+			width: 250px;
+		}
+	}
+}
+.start .header .search-box {
+	.search-btn.active .icon {
+		fill: #fff;
+	}
+	.search-field-box {
+		border-color: #fff;
+		color: #fff;
+		background: none;
+		.search.inputtext {
+			border-color: rgba(253,253,253,.2);
+		}
+	}
+	@media #{$small-and-down}{
+		.search-field-box {
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 1px;
+				background: #fff;
+				width: calc(100% - 47px);
+			}
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				height: 1px;
+				background: #fff;
+				width: 21px;
+			}
+			.tngl {
+				border-right-color: transparent;
+				border-bottom-color: transparent;
+			}
+		}
+	}
+}

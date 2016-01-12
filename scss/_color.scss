@@ -1,0 +1,89 @@
+// Utility Color Classes
+$gray: (
+	'xxlight': #e8e8e8, // border
+	'xlight': #c4c4c4, // text
+	'light': #b8b8b8, // arrows
+	'medium': #484848, // text
+	'dark': #3b3b3b, // bg
+	'xdark': #2d2d2d, // text
+);
+$bluegray: (
+	'xlight': #ecf0f1, // border, bg, table-bg
+	'light': #eceff1, // delimiter
+	'medium': #cfd8dc, // table-bg, border
+	'dark': #afb4bb, // border
+	//'xdark': # // 
+);
+
+$red: (
+	'light': #c54a3d,
+	'base': #c0392b,
+	'medium': #d32f2f,
+	'dark': #b00106,
+);
+$green: (
+	'light': #92c37c,
+	'base': #27ae60,
+);
+$blue: (
+	'base': #2980b9,
+);
+$darkblue: (
+	'base': #34495e,
+);
+$yellow: (
+	'base': #f39c12,
+);
+$violet: (
+	'base': #8e44ad,
+);
+
+$colors: (
+  "gray": $gray,
+  "bluegray": $bluegray,
+  "red": $red,
+  "green": $green,
+  "blue": $blue,
+  "darkblue": $darkblue,
+  "yellow": $yellow,
+  "violet": $violet,
+);
+
+
+
+// Color Classes
+@each $color_name, $color in $colors {
+	@each $color_type, $color_value in $color {
+		@if $color_type == "base" {
+			.#{$color_name} {
+				background-color: $color_value;
+			}
+			.#{$color_name}-text {
+				color: $color_value;
+			}
+		}
+		@else {
+			.#{$color_name}.#{$color_type} {
+				background-color: $color_value;
+			}
+			.color-#{$color_name}.text-#{$color_type} {
+				color: $color_value;
+			}
+		}
+	}
+}
+
+// usage: color("name_of_color", "type_of_color")
+// to avoid to repeating map-get($colors, ...)
+
+@function color($color, $type) {
+  @if map-has-key($colors, $color) {
+    $curr_color: map-get($colors, $color);
+    @if map-has-key($curr_color, $type) {
+      @return map-get($curr_color, $type);
+    }
+  }
+  @warn "Unknown `#{name}` in $colors.";
+  @return null;
+}
+

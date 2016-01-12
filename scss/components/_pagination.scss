@@ -1,0 +1,82 @@
+// Pagination
+.pagination {
+	margin: 20px auto 50px;
+	@media #{$large-and-up}{
+		margin-top: 10px;
+	}
+}
+.pagin-list {
+	@extend ul.nostyle;
+	text-align: center;
+	font-size: 0;
+	letter-spacing: 0;
+	vertical-align: middle;
+	.item-page {
+		display: inline-block;
+		text-align: center;
+		vertical-align: middle;
+		margin: 0 5px;
+		font-size: $small-text;
+		letter-spacing: normal;
+		.pagin-link {
+			display: block;
+			width: 2em;
+			height: 2em;
+			line-height: 2em;
+			vertical-align: middle;
+			color: #000;
+		}
+		&:hover a {
+			color: color('red', 'base');
+		}
+		&.active a { 
+			color: #fff; 
+			background: color('red', 'base');
+			cursor: default;
+		}
+		&.disabled a {
+			cursor: default;
+			color: #989898;
+		}
+	}
+	
+	.prev-page,
+	.next-page {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 5px;
+		font-size: $small-text;
+		letter-spacing: normal;
+		width: 2em;
+		height: 2em;
+		.pagin-link {
+			display: block;
+			padding: 6px;
+			height: 100%;
+		}
+		.icon {
+			fill: #000;
+			width: 100%;
+			height: 100%;
+		}
+		.disabled {
+			cursor: default;
+			.icon {
+				fill: #989898;
+			}
+		}
+		&:hover .icon {
+			fill: color('red', 'base');
+		}
+	}
+	.prev-page .icon {
+		transform: rotate(180deg);
+	}
+	.prev-page {
+		margin-left: 0;
+	}
+	.next-page {
+		margin-right: 0;
+	}
+
+}

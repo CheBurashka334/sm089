@@ -1,0 +1,57 @@
+// collapsible
+.collapsible {
+	.collapsible-body {
+		border: 0;
+		display: none;
+	}
+	.collapsible-body-content {
+		padding: 1px $gutter-width $gutter-width/2;
+		@extend .clearfix;
+		>*:first-child {
+			margin-top: 0.5rem;
+		}
+	}
+	ul.collapsible-body-content {
+		@extend ul.nostyle;
+	}
+	&.sidebar-menu >.menu-item > .menu-link,
+	.collapsible-header {
+		padding: $gutter-width*0.9 $gutter-width $gutter-width*0.8;
+		@extend .medium-text;
+		line-height: 1;
+		cursor: pointer;
+		min-height: 50px;
+	}
+	.collapsible-header {
+		&:hover {
+			color: color('primary', 'base');
+		}
+	}
+	&.collapsible-type-2 {
+		padding: 0;
+		.collapsible-header {
+			padding: $gutter-width*1.5 0;
+			padding-right: $gutter-width*1.5;
+			line-height: 1.5;
+			border-top: 1px solid color('border', 'table-border');
+			color: color('primary', 'base');
+			&:after {
+				top: $gutter-width*1.75;
+				right: 0;
+				color: inherit;
+			}
+			&:hover {
+				background: none;
+			}
+		}
+		.collapsible-body-content {
+			padding: 0 0 $gutter-width*1.5;
+		}
+	}
+}
+.base-card,
+.base-card .card-content {
+	.collapsible-type-2:first-child li:first-child .collapsible-header {
+		border: 0;
+	}
+}

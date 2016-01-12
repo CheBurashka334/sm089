@@ -1,0 +1,10 @@
+// breadcrumbs
+.breadcrumbs {
+	margin: $gutter-width*1.3 0 $gutter-width/2;
+	.brdcmb-link {
+		@extend a.nostyle;
+	}
+	.brdcmb-curpage	{
+		color: color('primary', 'base');
+	}
+}
