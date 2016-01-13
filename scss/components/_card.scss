@@ -20,6 +20,24 @@
 			min-height: 365px;
 		}
 	}
+	&.subcategory {
+		@media #{$medium-and-up}{
+			.m3 & {
+				min-height: 180px;
+			}
+			.m4 & {
+				min-height: 240px;
+			}
+		}
+		@media #{$large-and-up}{
+			.l3 & {
+				min-height: 280px;
+			}
+			.l4 & {
+				min-height: 380px;
+			}
+		}
+	}
 }
 .card-img,
 .card-img .img-link {
@@ -29,6 +47,24 @@
 	background-repeat: no-repeat;
 	@media #{$medium-and-up}{
 		height: 310px;
+	}
+	.subcategory & {
+		@media #{$medium-and-up}{
+			.m3 & {
+				height: 115px;
+			}
+			.m4 & {
+				height: 170px;
+			}
+		}
+		@media #{$large-and-up}{
+			.l3 & {
+				height: 190px;
+			}
+			.l4 & {
+				height: 290px;
+			}
+		}
 	}
 }
 .card-content {
@@ -41,6 +77,16 @@
 		padding: 20px 25px;
 		min-height: 120px;
 	}
+	.subcategory & {
+		@media #{$medium-and-up}{
+			padding: 10px;
+			min-height: 55px;
+		}
+		@media #{$large-and-up}{
+			padding: 20px;
+			min-height: 90px;
+		}
+	}
 }
 .card-title {
 	.service & {
@@ -49,7 +95,7 @@
 		}
 	}
 	.idea & {
-		color: color('yellow', 'base');
+		color: $yellow;
 		font-size: $big-text;
 		line-height: 20px;
 		font-weight: normal;
@@ -62,6 +108,15 @@
 			font-size: 20px;
 			line-height: 25px;
 			margin-bottom: 5px;
+		}
+	}
+	.subcategory & {
+		color: $yellow;
+		font-size: $base-text;
+		font-weight: normal;
+		margin: 0;
+		@media #{$large-and-up}{
+			font-size: $xbig-text
 		}
 	}
 	a:hover {

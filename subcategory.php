@@ -95,5 +95,55 @@
 	</div>
 </div>
 <?php include('service-box.php'); ?>
+<div class="catalog">
+	<div class="box-title">Смотрите так же:</div>
+	<div class="subcategories-list row valign-wrapper">
+		<div class="col m4 l4 s-fullwidth valign valign-wrapper">
+			<div class="card subcategory valign">
+				<div class="card-img center-align hide-on-small-only">
+					<a href="subcategory.php" class="img-link" style="background-image:url('images/content/category/work-7-alt.jpg');"></a>
+				</div>
+				<div class="card-content">
+					<div class="card-title">
+						<a href="subcategory.php">
+							Потолочные системы
+							<div class="icon-direction hide-on-med-and-up"><svg class="icon"><use xlink:href="#arrow-thin"/></svg></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col m4 l4 s-fullwidth valign valign-wrapper">
+			<div class="card subcategory valign">
+				<div class="card-img center-align hide-on-small-only">
+					<a href="subcategory.php" class="img-link" style="background-image:url('images/content/category/work-8-alt.jpg');"></a>
+				</div>
+				<div class="card-content">
+					<div class="card-title">
+						<a href="subcategory.php">
+							Инструменты
+							<div class="icon-direction hide-on-med-and-up"><svg class="icon"><use xlink:href="#arrow-thin"/></svg></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col m4 l4 s-fullwidth valign valign-wrapper">
+			<div class="card subcategory valign">
+				<div class="card-img center-align hide-on-small-only">
+					<a href="subcategory.php" class="img-link" style="background-image:url('images/content/category/work-9.jpg');"></a>
+				</div>
+				<div class="card-content">
+					<div class="card-title">
+						<a href="subcategory.php">
+							Крепеж
+							<div class="icon-direction hide-on-med-and-up"><svg class="icon"><use xlink:href="#arrow-thin"/></svg></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <?php include('subscribe-box.php'); ?>
 <?php include('footer.php'); ?>

@@ -1,6 +1,40 @@
+.employee-box {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	@media #{$medium-and-up}{
+		padding-top: 30px;
+		padding-bottom: 10px;
+		margin-bottom: 50px;
+	}
+	@media #{$large-and-up}{
+		margin-top: 30px;
+	}
+}
 .employee {
 	
 }
+.employee-img {
+	text-align: center;
+	margin-bottom: 20px;
+	@media #{$medium-and-up}{
+		text-align: left;
+	}
+}
 .employee-info {
 	
+}
+.employee-name,
+.employee-position {
+	margin-bottom: 10px;
+	text-align: center;
+	@media #{$medium-and-up}{
+		text-align: left;
+	}
+}
+.employee-text {
+	@media #{$small-only}{
+		padding: 0 10px;
+	}
 }
