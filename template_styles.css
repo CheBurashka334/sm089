@@ -2345,28 +2345,6 @@ html, body {
           transform: rotate(90deg);
 }
 
-/* line 58, scss/components/_page-aside.scss */
-.dark-bg {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background: rgba(0, 0, 0, 0.6);
-  opacity: 0;
-  will-change: opacity;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  -webkit-transition: opacity .3s ease;
-          transition: opacity .3s ease;
-}
-/* line 70, scss/components/_page-aside.scss */
-.dark-bg.open {
-  opacity: 1;
-  z-index: 9990;
-}
-
 /* line 2, scss/components/_header.scss */
 .header {
   background: #c54a3d;
@@ -3550,25 +3528,61 @@ span.badge.new:after {
   line-height: 100%;
 }
 
-/* line 107, scss/components/_buttons.scss */
+/* line 106, scss/components/_buttons.scss */
+.btn-add {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #2d2d2d;
+  border: 0;
+  background: none;
+  margin-top: 20px;
+}
+/* line 115, scss/components/_buttons.scss */
+.btn-add .plus {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  background: #dcdcdc;
+  color: #fff;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+/* line 128, scss/components/_buttons.scss */
+.btn-add:hover .plus {
+  background: #c54a3d;
+}
+/* line 131, scss/components/_buttons.scss */
+.btn-add.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 138, scss/components/_buttons.scss */
 .icon {
   width: 100%;
   height: 100%;
   vertical-align: top;
 }
 
-/* line 112, scss/components/_buttons.scss */
+/* line 143, scss/components/_buttons.scss */
 .btn-menu,
 .btn-menu.btn-icon {
   padding: 3px 0;
 }
-/* line 115, scss/components/_buttons.scss */
+/* line 146, scss/components/_buttons.scss */
 .btn-menu .icon,
 .btn-menu.btn-icon .icon {
   fill: #fff;
 }
 
-/* line 122, scss/components/_buttons.scss */
+/* line 153, scss/components/_buttons.scss */
 .btn-close {
   width: 17px;
   height: 17px;
@@ -3579,28 +3593,45 @@ span.badge.new:after {
   -webkit-transition: -webkit-transform .3s ease;
           transition: transform .3s ease;
 }
-/* line 128, scss/components/_buttons.scss */
+/* line 159, scss/components/_buttons.scss */
 .btn-close .icon {
   fill: #c0392b;
 }
-/* line 131, scss/components/_buttons.scss */
+/* line 162, scss/components/_buttons.scss */
 .btn-close:hover {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
 }
+/* line 165, scss/components/_buttons.scss */
+.small-modal .btn-close {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  top: 0px;
+  right: 0px;
+}
+@media only screen and (min-width: 651px) {
+  /* line 165, scss/components/_buttons.scss */
+  .small-modal .btn-close {
+    width: 45px;
+    height: 45px;
+    top: 20px;
+    right: 20px;
+  }
+}
 
-/* line 135, scss/components/_buttons.scss */
+/* line 179, scss/components/_buttons.scss */
 .btn-delete-from-card {
   width: 17px;
   height: 17px;
 }
-/* line 141, scss/components/_buttons.scss */
+/* line 185, scss/components/_buttons.scss */
 .btn-delete-from-card:hover .icon {
   fill: #c0392b;
 }
 
-/* line 145, scss/components/_buttons.scss */
+/* line 189, scss/components/_buttons.scss */
 .btn-nostyle, .btn-link, .carousel-controlls .prev,
 .carousel-controlls .next {
   background: none;
@@ -4114,16 +4145,30 @@ textarea {
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #cfd8dc;
-  padding: 9px 18px;
+  padding: 9px 10px;
   font-family: inherit;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
   color: #2d2d2d;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
-/* line 24, scss/components/_form.scss */
+@media only screen and (min-width: 651px) {
+  /* line 2, scss/components/_form.scss */
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="tel"],
+  input[type="password"],
+  input[type="search"],
+  .inputtext,
+  textarea {
+    padding: 9px 18px;
+    font-size: 14px;
+  }
+}
+/* line 29, scss/components/_form.scss */
 input[type="text"] + .textfield-placeholder,
 input[type="email"] + .textfield-placeholder,
 input[type="url"] + .textfield-placeholder,
@@ -4132,12 +4177,12 @@ input[type="password"] + .textfield-placeholder,
 input[type="search"] + .textfield-placeholder,
 .inputtext + .textfield-placeholder,
 textarea + .textfield-placeholder {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
   color: #c4c4c4;
   position: absolute;
-  top: 11px;
-  left: 18px;
+  top: 10px;
+  left: 11px;
   cursor: text;
   opacity: 1;
   will-change: opacity, transform;
@@ -4147,7 +4192,22 @@ textarea + .textfield-placeholder {
   -webkit-transition: -webkit-transform .1s, opacity .1s;
           transition: transform .1s, opacity .1s;
 }
-/* line 36, scss/components/_form.scss */
+@media only screen and (min-width: 651px) {
+  /* line 29, scss/components/_form.scss */
+  input[type="text"] + .textfield-placeholder,
+  input[type="email"] + .textfield-placeholder,
+  input[type="url"] + .textfield-placeholder,
+  input[type="tel"] + .textfield-placeholder,
+  input[type="password"] + .textfield-placeholder,
+  input[type="search"] + .textfield-placeholder,
+  .inputtext + .textfield-placeholder,
+  textarea + .textfield-placeholder {
+    top: 11px;
+    left: 19px;
+    font-size: 14px;
+  }
+}
+/* line 47, scss/components/_form.scss */
 input[type="text"] + .textfield-placeholder:focus,
 input[type="email"] + .textfield-placeholder:focus,
 input[type="url"] + .textfield-placeholder:focus,
@@ -4158,7 +4218,7 @@ input[type="search"] + .textfield-placeholder:focus,
 textarea + .textfield-placeholder:focus {
   outline: none;
 }
-/* line 40, scss/components/_form.scss */
+/* line 51, scss/components/_form.scss */
 input[type="text"][required] + .textfield-placeholder:after,
 input[type="email"][required] + .textfield-placeholder:after,
 input[type="url"][required] + .textfield-placeholder:after,
@@ -4170,7 +4230,7 @@ textarea[required] + .textfield-placeholder:after {
   content: '*';
   color: #c54a3d;
 }
-/* line 45, scss/components/_form.scss */
+/* line 56, scss/components/_form.scss */
 input[type="text"].inputtext-small,
 input[type="email"].inputtext-small,
 input[type="url"].inputtext-small,
@@ -4185,7 +4245,7 @@ textarea.inputtext-small {
   padding: 7px 15px;
   height: 30px;
 }
-/* line 51, scss/components/_form.scss */
+/* line 62, scss/components/_form.scss */
 input[type="text"].inputtext-small + .textfield-placeholder,
 input[type="email"].inputtext-small + .textfield-placeholder,
 input[type="url"].inputtext-small + .textfield-placeholder,
@@ -4198,7 +4258,7 @@ textarea.inputtext-small + .textfield-placeholder {
   line-height: 1em;
   top: 9px;
 }
-/* line 58, scss/components/_form.scss */
+/* line 69, scss/components/_form.scss */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
@@ -4210,7 +4270,7 @@ textarea:focus {
   border-color: #afb4bb;
   outline: none;
 }
-/* line 62, scss/components/_form.scss */
+/* line 73, scss/components/_form.scss */
 input[type="text"].dirty + .textfield-placeholder,
 input[type="email"].dirty + .textfield-placeholder,
 input[type="url"].dirty + .textfield-placeholder,
@@ -4224,7 +4284,7 @@ textarea.dirty + .textfield-placeholder {
       -ms-transform: translate(50px, 0);
           transform: translate(50px, 0);
 }
-/* line 66, scss/components/_form.scss */
+/* line 77, scss/components/_form.scss */
 input[type="text"][class*='invalid-'],
 input[type="email"][class*='invalid-'],
 input[type="url"][class*='invalid-'],
@@ -4235,7 +4295,7 @@ input[type="search"][class*='invalid-'],
 textarea[class*='invalid-'] {
   border-color: #c54a3d;
 }
-/* line 69, scss/components/_form.scss */
+/* line 80, scss/components/_form.scss */
 input[type="text"].invalid-required ~ .error-required, input[type="text"].invalid-pattern ~ .error-pattern,
 input[type="email"].invalid-required ~ .error-required,
 input[type="email"].invalid-pattern ~ .error-pattern,
@@ -4254,7 +4314,7 @@ textarea.invalid-pattern ~ .error-pattern {
   height: 1.5em;
   margin-top: 15px;
 }
-/* line 74, scss/components/_form.scss */
+/* line 85, scss/components/_form.scss */
 input[type="text"].dirty:not([class*='invalid-']),
 input[type="email"].dirty:not([class*='invalid-']),
 input[type="url"].dirty:not([class*='invalid-']),
@@ -4266,13 +4326,13 @@ textarea.dirty:not([class*='invalid-']) {
   border-color: #92c37c;
 }
 
-/* line 78, scss/components/_form.scss */
+/* line 89, scss/components/_form.scss */
 textarea {
   max-width: 100%;
   min-height: 190px;
 }
 
-/* line 82, scss/components/_form.scss */
+/* line 93, scss/components/_form.scss */
 .error-text {
   height: 0;
   overflow: hidden;
@@ -4283,7 +4343,7 @@ textarea {
           transition: all .3s ease;
 }
 
-/* line 90, scss/components/_form.scss */
+/* line 101, scss/components/_form.scss */
 .error-box {
   border: 1px solid #c54a3d;
   padding: 9px 18px;
@@ -4291,19 +4351,24 @@ textarea {
   line-height: 20px;
   color: #c54a3d;
   margin-bottom: 20px;
+  display: none;
+}
+/* line 109, scss/components/_form.scss */
+.invalid .error-box {
+  display: block;
 }
 
-/* line 100, scss/components/_form.scss */
+/* line 115, scss/components/_form.scss */
 input[type="checkbox"] {
   display: none;
 }
-/* line 102, scss/components/_form.scss */
+/* line 117, scss/components/_form.scss */
 input[type="checkbox"] + .checkbox-lbl {
   line-height: 17px;
   vertical-align: middle;
   cursor: pointer;
 }
-/* line 106, scss/components/_form.scss */
+/* line 121, scss/components/_form.scss */
 input[type="checkbox"] + .checkbox-lbl:before {
   content: '';
   display: inline-block;
@@ -4313,16 +4378,16 @@ input[type="checkbox"] + .checkbox-lbl:before {
   background-color: white;
   vertical-align: bottom;
 }
-/* line 117, scss/components/_form.scss */
+/* line 132, scss/components/_form.scss */
 input[type="checkbox"]:checked + .checkbox-lbl:before {
   background: white url("images/tick.png") center no-repeat;
 }
 
-/* line 123, scss/components/_form.scss */
+/* line 138, scss/components/_form.scss */
 input[type="radio"] {
   display: none;
 }
-/* line 125, scss/components/_form.scss */
+/* line 140, scss/components/_form.scss */
 input[type="radio"] + .radio-lbl {
   display: inline-block;
   margin: 3px 0;
@@ -4330,7 +4395,7 @@ input[type="radio"] + .radio-lbl {
   vertical-align: middle;
   cursor: pointer;
 }
-/* line 131, scss/components/_form.scss */
+/* line 146, scss/components/_form.scss */
 input[type="radio"] + .radio-lbl:before {
   content: '';
   display: inline-block;
@@ -4344,16 +4409,16 @@ input[type="radio"] + .radio-lbl:before {
   vertical-align: top;
 }
 
-/* line 150, scss/components/_form.scss */
+/* line 165, scss/components/_form.scss */
 fieldset {
   position: relative;
-  padding: 0 0 30px;
+  padding: 0 0 10px;
   margin-top: 25px;
   margin-bottom: 25px;
   border: 0;
   border-bottom: 1px solid #eceff1;
 }
-/* line 157, scss/components/_form.scss */
+/* line 172, scss/components/_form.scss */
 fieldset:after {
   content: '';
   display: block;
@@ -4368,39 +4433,59 @@ fieldset:after {
   left: 50%;
   margin-left: -3px;
 }
-/* line 171, scss/components/_form.scss */
+/* line 186, scss/components/_form.scss */
 fieldset:last-of-type {
   border-bottom: 0;
 }
-/* line 173, scss/components/_form.scss */
+/* line 188, scss/components/_form.scss */
 fieldset:last-of-type:after {
   display: none;
 }
 
-/* line 178, scss/components/_form.scss */
+/* line 193, scss/components/_form.scss */
 legend {
   font-size: 18px;
-  margin-bottom: 25px;
-}
-
-/* line 182, scss/components/_form.scss */
-.field {
   margin-bottom: 10px;
 }
 
-/* line 185, scss/components/_form.scss */
+/* line 197, scss/components/_form.scss */
+.fieldset-header {
+  margin-bottom: 25px;
+}
+/* line 199, scss/components/_form.scss */
+.fieldset-header p {
+  margin-top: 10px;
+}
+
+/* line 203, scss/components/_form.scss */
+.field {
+  margin-bottom: 20px;
+}
+/* line 205, scss/components/_form.scss */
+fieldset .field {
+  margin-top: 10px;
+}
+
+/* line 209, scss/components/_form.scss */
+.counter {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* line 214, scss/components/_form.scss */
 .inline-field, .table-field {
   vertical-align: baseline;
   margin: 1em 0;
 }
-/* line 188, scss/components/_form.scss */
+/* line 217, scss/components/_form.scss */
 .inline-field .label, .table-field .label,
 .inline-field .first-field,
 .table-field .first-field {
   display: inline-block;
   margin-right: 6.25px;
 }
-/* line 193, scss/components/_form.scss */
+/* line 222, scss/components/_form.scss */
 .inline-field > input:not(.dropdown-inp), .table-field > input:not(.dropdown-inp),
 .inline-field select,
 .table-field select,
@@ -4415,14 +4500,14 @@ legend {
   display: inline-block;
   width: auto;
 }
-/* line 202, scss/components/_form.scss */
+/* line 231, scss/components/_form.scss */
 .inline-field .field input, .table-field .field input,
 .inline-field .second-field input,
 .table-field .second-field input {
   width: 100%;
 }
 
-/* line 207, scss/components/_form.scss */
+/* line 236, scss/components/_form.scss */
 .table-field {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4438,13 +4523,13 @@ legend {
       -ms-flex-align: center;
           align-items: center;
 }
-/* line 213, scss/components/_form.scss */
+/* line 242, scss/components/_form.scss */
 .table-field .label,
 .table-field .first-field {
   width: 31%;
   margin-right: 10px;
 }
-/* line 218, scss/components/_form.scss */
+/* line 247, scss/components/_form.scss */
 .table-field > input,
 .table-field .field,
 .table-field .first-field + .second-field {
@@ -4452,63 +4537,63 @@ legend {
   width: calc(69% - 15px);
   margin: 3px 0;
 }
-/* line 224, scss/components/_form.scss */
+/* line 253, scss/components/_form.scss */
 .table-field > input[type="tel"],
 .table-field .field[type="tel"],
 .table-field .first-field + .second-field[type="tel"] {
   width: 33%;
 }
-/* line 227, scss/components/_form.scss */
+/* line 256, scss/components/_form.scss */
 .table-field > input [type="tel"],
 .table-field .field [type="tel"],
 .table-field .first-field + .second-field [type="tel"] {
   width: 66%;
 }
-/* line 231, scss/components/_form.scss */
+/* line 260, scss/components/_form.scss */
 .table-field .second-field {
   float: right;
   width: 66%;
   width: calc(69% - 10px);
 }
-/* line 236, scss/components/_form.scss */
+/* line 265, scss/components/_form.scss */
 .table-field.cols-2 > input, .table-field.cols-2 > .field,
 .table-field .cols-2 .btn {
   width: calc((70% - 40px)/2);
   margin: 3px 7px;
 }
-/* line 241, scss/components/_form.scss */
+/* line 270, scss/components/_form.scss */
 .table-field.cols-2 > input input, .table-field.cols-2 > .field input,
 .table-field .cols-2 .btn input {
   width: 100%;
 }
-/* line 244, scss/components/_form.scss */
+/* line 273, scss/components/_form.scss */
 .table-field.cols-2 > input:first-of-type, .table-field.cols-2 > .field:first-of-type,
 .table-field .cols-2 .btn:first-of-type {
   margin-left: 0;
 }
-/* line 247, scss/components/_form.scss */
+/* line 276, scss/components/_form.scss */
 .table-field.cols-2 > input:last-of-type, .table-field.cols-2 > .field:last-of-type,
 .table-field .cols-2 .btn:last-of-type {
   margin-right: 0;
 }
-/* line 251, scss/components/_form.scss */
+/* line 280, scss/components/_form.scss */
 .table-field.cols-3 > input, .table-field.cols-3 > .field {
   width: calc((70% - 60px)/3);
   margin: 3px 5px;
 }
-/* line 255, scss/components/_form.scss */
+/* line 284, scss/components/_form.scss */
 .table-field.cols-3 > input input, .table-field.cols-3 > .field input {
   width: 100%;
 }
-/* line 258, scss/components/_form.scss */
+/* line 287, scss/components/_form.scss */
 .table-field.cols-3 > input:first-of-type, .table-field.cols-3 > .field:first-of-type {
   margin-left: 0;
 }
-/* line 261, scss/components/_form.scss */
+/* line 290, scss/components/_form.scss */
 .table-field.cols-3 > input:last-of-type, .table-field.cols-3 > .field:last-of-type {
   margin-right: 0;
 }
-/* line 265, scss/components/_form.scss */
+/* line 294, scss/components/_form.scss */
 .table-field.top-tf {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4519,19 +4604,19 @@ legend {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-/* line 268, scss/components/_form.scss */
+/* line 297, scss/components/_form.scss */
 .table-field.top-tf .label,
 .table-field.top-tf .first-field {
   margin-top: 13px;
 }
-/* line 272, scss/components/_form.scss */
+/* line 301, scss/components/_form.scss */
 .table-field.top-tf > input,
 .table-field.top-tf .field,
 .table-field.top-tf .second-field {
   width: 66%;
   width: calc(69% - 10px);
 }
-/* line 279, scss/components/_form.scss */
+/* line 308, scss/components/_form.scss */
 .table-field.action-box {
   margin-top: 2.5px;
   -webkit-box-pack: end;
@@ -4539,17 +4624,17 @@ legend {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-/* line 283, scss/components/_form.scss */
+/* line 312, scss/components/_form.scss */
 .table-field.action-box .cols-2 .btn {
   width: calc((100% - 40px)/2);
   margin: 0;
 }
-/* line 286, scss/components/_form.scss */
+/* line 315, scss/components/_form.scss */
 .table-field.action-box .cols-2 .btn:first-child {
   margin-right: 35px;
 }
 
-/* line 293, scss/components/_form.scss */
+/* line 322, scss/components/_form.scss */
 select {
   box-sizing: border-box;
   border: 1px solid #ecf0f1;
@@ -4561,17 +4646,17 @@ select {
   cursor: pointer;
   width: 100%;
 }
-/* line 303, scss/components/_form.scss */
+/* line 332, scss/components/_form.scss */
 select option {
   max-width: 100%;
 }
 
-/* line 307, scss/components/_form.scss */
+/* line 336, scss/components/_form.scss */
 .select-box select {
   width: 100%;
 }
 
-/* line 310, scss/components/_form.scss */
+/* line 339, scss/components/_form.scss */
 .triangle {
   position: absolute;
   top: 1px;
@@ -4580,7 +4665,7 @@ select option {
   height: 43px;
   background: #fff;
 }
-/* line 317, scss/components/_form.scss */
+/* line 346, scss/components/_form.scss */
 .triangle:after {
   content: '';
   display: block;
@@ -4594,51 +4679,51 @@ select option {
   border-right: 8px solid transparent;
 }
 
-/* line 332, scss/components/_form.scss */
+/* line 361, scss/components/_form.scss */
 .order-form-box,
 .consult-form-box {
   margin: 17.5px 0 25px;
 }
 @media only screen and (min-width: 991px) {
-  /* line 332, scss/components/_form.scss */
+  /* line 361, scss/components/_form.scss */
   .order-form-box,
   .consult-form-box {
     margin-top: 25px;
   }
-  /* line 337, scss/components/_form.scss */
+  /* line 366, scss/components/_form.scss */
   .order-form-box .col.l5:nth-child(odd),
   .consult-form-box .col.l5:nth-child(odd) {
     padding-right: 7.5px;
   }
-  /* line 340, scss/components/_form.scss */
+  /* line 369, scss/components/_form.scss */
   .order-form-box .col.l5:nth-child(even),
   .consult-form-box .col.l5:nth-child(even) {
     padding-left: 7.5px;
   }
 }
-/* line 344, scss/components/_form.scss */
+/* line 373, scss/components/_form.scss */
 .order-form-box .btn,
 .consult-form-box .btn {
   margin-top: 5px;
 }
 
-/* line 349, scss/components/_form.scss */
+/* line 378, scss/components/_form.scss */
 .price-form-box {
   padding: 17.5px 0 25px;
 }
-/* line 351, scss/components/_form.scss */
+/* line 380, scss/components/_form.scss */
 .price-form-box .field {
   margin-bottom: 15px;
 }
 @media only screen and (min-width: 651px) {
-  /* line 351, scss/components/_form.scss */
+  /* line 380, scss/components/_form.scss */
   .price-form-box .field {
     margin-bottom: 0;
     margin-right: 18px;
   }
 }
 @media only screen and (min-width: 991px) {
-  /* line 351, scss/components/_form.scss */
+  /* line 380, scss/components/_form.scss */
   .price-form-box .field {
     margin-right: 5px;
   }
@@ -5985,6 +6070,96 @@ select option {
   }
 }
 
+/* line 2, scss/components/_modal.scss */
+.modal {
+  z-index: 9999;
+  background: #fff;
+  display: none;
+  position: absolute;
+}
+/* line 7, scss/components/_modal.scss */
+.modal .btn-close {
+  position: absolute;
+  z-index: 999;
+}
+/* line 11, scss/components/_modal.scss */
+.modal.small-modal {
+  width: 92%;
+  left: 4%;
+  top: 20%;
+}
+/* line 15, scss/components/_modal.scss */
+.modal.small-modal .modal-inner {
+  padding: 30px 20px;
+}
+@media only screen and (min-width: 651px) {
+  /* line 11, scss/components/_modal.scss */
+  .modal.small-modal {
+    max-width: 600px;
+    left: 50%;
+    margin-left: -300px;
+  }
+  /* line 22, scss/components/_modal.scss */
+  .modal.small-modal .modal-inner {
+    padding: 30px 30px 40px;
+  }
+}
+@media only screen and (min-width: 991px) {
+  /* line 11, scss/components/_modal.scss */
+  .modal.small-modal {
+    max-width: 780px;
+    margin-left: -390px;
+  }
+  /* line 29, scss/components/_modal.scss */
+  .modal.small-modal .modal-inner {
+    padding: 40px 50px 50px;
+  }
+}
+
+/* line 35, scss/components/_modal.scss */
+.dark-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+/* line 45, scss/components/_modal.scss */
+.modal-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+@media only screen and (min-width: 651px) {
+  /* line 45, scss/components/_modal.scss */
+  .modal-title {
+    font-size: 28px;
+  }
+}
+/* line 52, scss/components/_modal.scss */
+.success-form .modal-title {
+  color: #92c37c;
+}
+/* line 55, scss/components/_modal.scss */
+.error-form .modal-title {
+  color: #c0392b;
+}
+
+/* line 59, scss/components/_modal.scss */
+.modal-text {
+  font-size: 14px;
+}
+@media only screen and (min-width: 651px) {
+  /* line 59, scss/components/_modal.scss */
+  .modal-text {
+    font-size: 16px;
+  }
+}
+
 /*@import "components/geo";
 @import "components/breadcrumbs";
 @import "components/product";
@@ -5997,5 +6172,4 @@ select option {
 @import "components/blog";
 @import "components/documents";
 @import "components/digit";
-@import "components/clients";
-@import "components/modal";*/
+@import "components/clients";*/

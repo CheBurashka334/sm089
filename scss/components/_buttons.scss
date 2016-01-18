@@ -103,6 +103,37 @@
 		}
 	}
 }
+.btn-add {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	font-size: $base-text;
+	color: $base-text-color;
+	border: 0;
+	background: none;
+	margin-top: 20px;
+	.plus {
+		display: inline-block;
+		font-size: 24px;
+		line-height: 30px;
+		text-align: center;
+		vertical-align: middle;
+		width: 30px;
+		height: 30px;
+		background: #dcdcdc;
+		color: #fff;
+		margin-right: 20px;
+		border-radius: 50%;
+	}
+	&:hover .plus {
+		background: color('red', 'light');
+	}
+	&.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
 
 .icon {
 	width: 100%;
@@ -130,6 +161,19 @@
 	}
 	&:hover {
 		transform: rotate(90deg);
+	}
+	.small-modal & {
+		width: 40px;
+		height: 40px;
+		padding: 10px;
+		top: 0px;
+		right: 0px;
+		@media #{$medium-and-up}{
+			width: 45px;
+			height: 45px;
+			top: 20px;
+			right: 20px;
+		}
 	}
 }
 .btn-delete-from-card {

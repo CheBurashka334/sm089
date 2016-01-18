@@ -11,28 +11,39 @@ textarea {
 	width: 100%;
 	box-sizing: border-box;
 	border: 1px solid color('bluegray', 'medium');
-	padding: 9px 18px;
+	padding: 9px 10px;
 	font-family: inherit;
-	font-size: $base-text;
+	font-size: $small-text;
 	line-height: 20px;
 	color: $base-text-color;
+	
+	@media #{$medium-and-up}{
+		padding: 9px 18px;
+		font-size: $base-text;
+	}
 	
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
 	
 	& + .textfield-placeholder {
-		font-size: $base-text;
+		font-size: $small-text;
 		line-height: 20px;
 		color: color('gray', 'xlight');
 		position: absolute;
-		top: 11px;
-		left: 18px;
+		top: 10px;
+		left: 11px;
 		cursor: text;
 		opacity: 1;
 		will-change: opacity, transform;
 		transform: translate(0,0);
 		transition: transform .1s, opacity .1s;
+		
+		@media #{$medium-and-up}{
+			top: 11px;
+			left: 19px;
+			font-size: $base-text;
+		}
 		&:focus {
 			outline: none;
 		}
@@ -94,6 +105,10 @@ textarea {
 	line-height: 20px;
 	color: color('red', 'light');
 	margin-bottom: 20px;
+	display: none;
+	.invalid & {
+		display: block;
+	}
 }
 
 // checkbox
@@ -149,7 +164,7 @@ input[type="radio"] {
 
 fieldset {
 	position: relative;
-	padding: 0 0 30px;
+	padding: 0 0 10px;
 	margin-top: 25px;
 	margin-bottom: 25px;
 	border: 0;
@@ -177,10 +192,24 @@ fieldset {
 }
 legend {
 	font-size: $xbig-text;
+	margin-bottom: 10px;
+}
+.fieldset-header {
 	margin-bottom: 25px;
+	p {
+		margin-top: 10px;
+	}
 }
 .field {
+	margin-bottom: 20px;
+	fieldset & {
+		margin-top: 10px;
+	}
+}
+.counter {
+	margin-top: 10px;
 	margin-bottom: 10px;
+	font-size: 20px;
 }
 .inline-field {
 	vertical-align: baseline;
