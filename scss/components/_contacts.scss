@@ -4,12 +4,15 @@
 		margin-top: 40px;
 	}
 }
-.contacts-box {
+.contacts {
 	margin-bottom: 30px;
 	@media #{$small-only}{
 		p {
 			margin-left: 6px;
 		}
+	}
+	.contact-box & {
+		margin-bottom: 0;
 	}
 }
 .map {
@@ -18,5 +21,16 @@
 	margin-bottom: 10px;
 	@media #{$large-and-up}{
 		height: 350px;
+	}
+}
+
+.contact-box {
+	padding-top: 1px;
+	padding-bottom: 20px;
+	color: #fff;
+	border-bottom: 2px solid color('bluegray', 'xlight');
+	margin-bottom: -1px;
+	.icon {
+		fill: #fff;
 	}
 }

@@ -2,7 +2,20 @@
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
+.categories-list .category-block {
+	margin-bottom: 5px;
+	@media #{$medium-and-up}{
+		margin-bottom: 10px;
+	}
+	@media #{$large-and-up}{
+		margin-bottom: 20px;
+	}
+}
 .category {
+	color: #fff;
+	.icon {
+		fill: #fff;
+	}
 	a {
 		@extend a.nostyle;
 	}
@@ -10,19 +23,23 @@
 		align-items: center;
 	}
 	@media #{$small-only}{
-		margin-bottom: 5px;
-		color: #fff;
 		height: 80px;
-		.icon {
-			fill: #fff;
-		}
 	}
 	@media #{$medium-and-up}{
-		background: none;
-		margin-bottom: 10px;
-		color: $base-text-color;
-		.icon {
-			fill: $base-text-color;
+		.catalog & {
+			background: none;
+			color: $base-text-color;
+			.icon {
+				fill: $base-text-color;
+			}
+		}
+		.categories-box & {
+			padding: 1px 20px 5px;
+		}
+	}
+	@media #{$large-and-up}{
+		.categories-box & {
+			padding: 1px 0 5px;
 		}
 	}
 }
@@ -35,6 +52,14 @@
 	}
 	@media #{$medium-and-up}{
 		margin: 20px 0;
+		.categories-box & {
+			margin: 20px 0 5px;
+		}
+	}
+	@media #{$large-and-up}{
+		.categories-box & {
+			margin: 20px 30px 5px;
+		}
 	}
 }
 .category-icon {
@@ -99,6 +124,62 @@
 				.icon {
 					fill: color('red', 'light');
 				}
+			}
+		}
+	}
+}
+
+.categories-box {
+	.categories-list, .plate {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: stretch;
+	}
+	.menu-link {
+		font-size: $big-text;
+		display: inline-block;
+		padding: 7px 0;
+		@media #{$large-and-up}{
+			display: block;
+			padding: 10px 20px;
+			&:hover {
+				background: #fff;
+			}
+		}
+	}
+	.plate {
+		order: 1;
+	}
+	.category-block {
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+		align-content: stretch;
+		order: 1;
+		@media #{$small-only}{
+			&:first-child,
+			&:last-child {
+				order: 0;
+			}
+		}
+	}
+	.category {
+		width: 100%;
+	}
+	@media #{$medium-only}{
+		.m-horizontal.category-block {
+			max-width: 100%;
+			.menu {
+				column-count: 3;
+			}
+		}
+	}
+}
+@media #{$large-and-up}{
+	.subcategories-list .menu-link:hover {
+		@each $color in green, blue, red, yellow, violet, darkblue {
+			.#{$color} & {
+				color: color(#{$color}, 'base');
 			}
 		}
 	}

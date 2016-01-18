@@ -18,15 +18,21 @@
 			fill: color('red', 'light');
 		}
 	}
-	.footer & {
-		text-align: right;
+	.footer &,
+	.contact-box &{
 		.icon {
 			fill: #fff;
 		}
 	}
-	.contacts-box & {
+	.footer {
+		text-align: right;
+	}
+	.contacts & {
 		@media #{$small-only}{
 			margin-left: 6px;
 		}
+	}
+	.contact-box & {
+		margin-top: 17px;
 	}
 }

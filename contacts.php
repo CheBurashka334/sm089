@@ -3,7 +3,7 @@
 <div class="row contact-page">
 	<div class="col s12 m10 l12 center no-padding">
 		<div class="col s12 m10 l6">
-			<div class="contacts-box">
+			<div class="contacts">
 				<div class="location big-text">Адрес:</div>
 				<p class="big-text s-base">ЯНАО, г. Ноябрьск, Промзона, Юго-Восточный промузел, панели 9Б и 9В.</p>
 				<div class="phone big-text">Телефоны отделов:</div>
