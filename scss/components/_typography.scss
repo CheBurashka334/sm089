@@ -56,6 +56,11 @@ small {
 }
 .big-text {
 	font-size: $big-text;
+	&.s-base {
+		@media #{$small-only}{
+			font-size: $base-text;
+		}
+	}
 }
 .xbig-text {
 	font-size: $xbig-text;
@@ -270,8 +275,8 @@ h6 {
 	}
 }
 
-// table 
-table {
+// tables 
+table:not(.clear-style) {
 	width: 100%;
 	font-weight: normal;
 	margin: 2.8em auto 3.3em;
@@ -302,4 +307,55 @@ table {
 	tr:nth-child(even) td {
 		background: color('bluegray', 'medium');
 	}
+}
+table.clear-style {
+	width: 100%;
+	font-weight: normal;
+	margin: 10px 0;
+	td {
+		vertical-align: middle;
+		padding: 6px 8px;
+		border-bottom: 1px solid #d5d5d5;
+		@media #{$medium-and-up}{
+			padding: 10px;
+		}
+	}
+	tr:last-child td {
+		border-bottom: 0;
+	}
+	tr td:first-child {
+		@media #{$medium-and-up}{
+			padding-left: 0;
+		}
+	}
+}
+.contact-table {
+	margin-top: 0;
+	.td-phone {
+		text-align: right;
+		min-width: 120px;
+	}
+	@media #{$medium-and-up}{
+		font-size: $big-text;
+		margin: 10px 0 20px;
+		.td-phone {
+			min-width: 150px;
+		}
+	}
+}
+
+.phone,
+.location,
+.email {
+	display: block;
+	padding-left: 30px;
+}
+.phone {
+	background: url('images/phone.png') center left no-repeat;
+}
+.location {
+	background: url('images/map.png') center left no-repeat;
+}
+.email {
+	background: url('images/email.png') center left no-repeat;
 }

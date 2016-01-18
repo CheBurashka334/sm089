@@ -1,20 +1,32 @@
-// social
-.soc-list {
-	.icon {
-		fill: color('text', 'input');
-	}
-	.soc-item {
-		width: $gutter-width*2.5;
-		margin: 0 $gutter-width;
-		height: 1.5em;
-	}
+.soc-box {
+	font-size: $big-text;
+	vertical-align: middle;
+	padding-top: 3px;
 	.soc-link {
-		display: block;
-		width: 100%;
-		height: 100%;
-		padding: 0 $gutter-width*0.5;
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		margin: 0 5px;
+		vertical-align: middle;
+		&:first-of-type {
+			margin-left: 20px;
+		}
+		.icon {
+			fill: $base-text-color;
+		}
 		&:hover .icon {
-			fill: color('primary', 'base');
+			fill: color('red', 'light');
+		}
+	}
+	.footer & {
+		text-align: right;
+		.icon {
+			fill: #fff;
+		}
+	}
+	.contacts-box & {
+		@media #{$small-only}{
+			margin-left: 6px;
 		}
 	}
 }

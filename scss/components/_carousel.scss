@@ -56,6 +56,16 @@
 	z-index: 2;
 	@extend .clearfix;
 	height: 100%;
+	.carousel-mobile & {
+		@media #{$medium-and-up}{
+			width: 100%;
+			&.row {
+				width: calc(100% + 20px);
+				margin-left: -10px;
+				margin-right: -10px;
+			}
+		}
+	}
 }
 .carousel-item {
 	margin-bottom: 0;
@@ -160,7 +170,8 @@
 			margin: 0 5px;
 		}
 	}
-	.carousel-cols & {
+	.carousel-cols &,
+	.carousel-mobile & {
 		position: absolute;
 		top: 40px;
 		left: 0;

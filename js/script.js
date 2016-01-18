@@ -119,7 +119,9 @@ $(document).ready(function(){
 			} else if(($(this).attr('data-visible') > 1) && ($(window).width() > 650)){
 				width = width / $(this).attr('data-visible');
 			}
-			$(this).jcarousel('items').css('width', Math.ceil(width) + 'px');
+			if((!$(this).hasClass('carousel-mobile')) || ($(this).hasClass('carousel-mobile') && $(window).width() <= 650)){
+				$(this).jcarousel('items').css('width', Math.ceil(width) + 'px');
+			}
 		})
 		.on('jcarousel:targetin', '.carousel-item', function(e, carousel){
 			$(this).parents('.carousel').find('.indicator .current').text($(this).index() + 1);
@@ -171,16 +173,12 @@ $(document).ready(function(){
 		return carouselStage.jcarousel('items').eq(itemNavigation.index());
 	};
 	$(function() {
-		// Setup the carousels. Adjust the options for both carousels here.
 		var carouselStage      = $('.carousel-stage').jcarousel();
 		var carouselNavigation = $('.carousel-navigation').jcarousel();
-
-		// We loop through the items of the navigation carousel and set it up
-		// as a control for an item from the stage carousel.
+		
 		carouselNavigation.jcarousel('items').each(function() {
 			var item = $(this);
 
-			// This is where we actually connect to items.
 			var target = connector(item, carouselStage);
 
 			item
@@ -210,11 +208,11 @@ $(document).ready(function(){
 	
 	// yandex.map
 	// https://tech.yandex.ru/maps/doc/jsapi/2.1/quick-start/tasks/quick-start-docpage/
-	/*ymaps.ready(init);
+	ymaps.ready(init);
 	var sMap, sPlacemark, aMap;
 	
 	function init(){
-		sMap = new ymaps.Map("cont-map",{
+		sMap = new ymaps.Map("map",{
 			center: [57.16565145867384,65.54499550000001], // Тюмень
 			zoom: 12,
 			controls: ['smallMapDefaultSet','routeEditor','trafficControl']
@@ -226,31 +224,7 @@ $(document).ready(function(){
 		});
 		sMap.behaviors.disable('scrollZoom');
 		sMap.geoObjects.add(sPlacemark);
-		
-		aMap = new ymaps.Map("about-map",{
-			center: [57.16565145867384,65.54499550000001], // Тюмень
-			zoom: 11,
-			controls: ['smallMapDefaultSet','routeEditor','trafficControl']
-		});
-		var aMapCoords = [
-			[57.15689047935417,65.45087498346709],	// Черепанова 29
-			[57.15370227137238,65.56400849999996],	// 50 лет Октября, 8/1
-			[57.194878271190895,65.5943265],		// Ветеранов Труда, 47
-			[57.13485277148095,65.60593249999998],	// Пермякова, 1а
-			[57.13079877143909,65.54357149999998],	// Молодежная, 72
-			[57.13420827141365,65.4935445],			// Московский тракт, 120/1
-		]
-		var projectsCollection = new ymaps.GeoObjectCollection({},{
-			iconLayout: 'default#image',
-			iconImageHref: 'images/svg/pin56.svg',
-			iconImageSize: [35,53],
-		});
-		for (var i=0;i<aMapCoords.length;i++){
-			projectsCollection.add(new ymaps.Placemark(aMapCoords[i]));
-		}
-		aMap.behaviors.disable('scrollZoom');
-		aMap.geoObjects.add(projectsCollection);
-	}*/
+	}
 	
 	$('.toggle-content-box').each(function(){
 		if($(this).attr('data-state')){

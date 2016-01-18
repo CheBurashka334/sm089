@@ -41,6 +41,38 @@ html {
 	}
 }
 
+.promo-box {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	.btn.big {
+		font-size: $xbig-text;
+	}
+	&.vacancy {
+		background-image: url('images/content/vacancy-bg.jpg');
+		color: #fff;
+		.box-title {
+			margin-top: 0;
+		}
+		padding: 20px 20px 30px;
+		@media #{$medium-and-up}{
+			padding: 20px 55px 30px;
+			margin-bottom: 50px;
+			p {
+				font-size: $big-text;
+			}
+		}
+		@media #{$large-and-up}{
+			padding: 20px 65px 30px;
+			margin-top: 50px;
+		}
+	}
+}
+
 
 // Dividers
 
