@@ -2,7 +2,7 @@
 <div class="catalog">
 	<div class="box-title hide-on-small-only">Каталог</div>
 	<div class="categories-list row">
-		<div class="col s6 m12 l12">
+		<div class="col s6 m12 l12 category-block">
 			<div class="category green">
 				<div class="category-title">
 					<a href="category.php" class="valign-wrapper">
@@ -104,7 +104,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col s6 m12 l12">
+		<div class="col s6 m12 l12 category-block">
 			<div class="category yellow">
 				<div class="category-title">
 					<a href="category.php" class="valign-wrapper">
@@ -156,7 +156,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col s6 m12 l12">
+		<div class="col s6 m12 l12 category-block">
 			<div class="category blue">
 				<div class="category-title">
 					<a href="category.php" class="valign-wrapper">
@@ -188,7 +188,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col s6 m12 l12">
+		<div class="col s6 m12 l12 category-block">
 			<div class="category violet">
 				<div class="category-title">
 					<a href="category.php" class="valign-wrapper">
@@ -250,7 +250,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col s6 m12 l12">
+		<div class="col s6 m12 l12 category-block">
 			<div class="category red">
 				<div class="category-title">
 					<a href="category.php" class="valign-wrapper">
@@ -332,7 +332,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col s6 m12 l12">
+		<div class="col s6 m12 l12 category-block">
 			<div class="category darkblue">
 				<div class="category-title">
 					<a href="category.php" class="valign-wrapper">

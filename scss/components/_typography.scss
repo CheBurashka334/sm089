@@ -64,6 +64,11 @@ small {
 }
 .xbig-text {
 	font-size: $xbig-text;
+	&.s-base {
+		@media #{$small-only}{
+			font-size: $base-text;
+		}
+	}
 }
 .large-text {
 	font-size: $large-text;

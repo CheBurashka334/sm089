@@ -140,6 +140,58 @@
 		</div>
 	</div>
 </div>
+<div class="row carousel-logo carousel-cols">
+	<div class="carousel col s9 m10 l10 center no-padding" data-visible="5" data-visible-m="3">
+		<div class="carousel-inner valign-wrapper">
+			<div class="carousel-item logo-box col s3 m2 l2">
+				<div class="inner">
+					<div class="img"><img src="images/content/logo/logo-1.png"/></div>
+					<div class="img-hover"><img src="images/content/logo/logo-1-color.png"/></div>
+				</div>
+			</div>
+			<div class="carousel-item logo-box col s3 m2 l2">
+				<div class="inner">
+					<div class="img"><img src="images/content/logo/logo-2.png"/></div>
+					<div class="img-hover"><img src="images/content/logo/logo-2-color.png"/></div>
+				</div>
+			</div>
+			<div class="carousel-item logo-box col s3 m2 l2">
+				<div class="inner">
+					<div class="img"><img src="images/content/logo/logo-3.png"/></div>
+					<div class="img-hover"><img src="images/content/logo/logo-3-color.png"/></div>
+				</div>
+			</div>
+			<div class="carousel-item logo-box col s3 m2 l2">
+				<div class="inner">
+					<div class="img"><img src="images/content/logo/logo-4.png"/></div>
+					<div class="img-hover"><img src="images/content/logo/logo-4-color.png"/></div>
+				</div>
+			</div>
+			<div class="carousel-item logo-box col s3 m2 l2">
+				<div class="inner">
+					<div class="img"><img src="images/content/logo/logo-5.png"/></div>
+					<div class="img-hover"><img src="images/content/logo/logo-5-color.png"/></div>
+				</div>
+			</div>
+			<div class="carousel-item logo-box col s3 m2 l2">
+				<div class="inner">
+					<div class="img"><img src="images/content/logo/logo-3.png"/></div>
+					<div class="img-hover"><img src="images/content/logo/logo-3-color.png"/></div>
+				</div>
+			</div>
+			<div class="carousel-item logo-box col s3 m2 l2">
+				<div class="inner">
+					<div class="img"><img src="images/content/logo/logo-1.png"/></div>
+					<div class="img-hover"><img src="images/content/logo/logo-1-color.png"/></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="carousel-controlls">
+		<button class="prev"><svg class="icon"><use xlink:href="#arrow-thin"/></svg></button>
+		<button class="next"><svg class="icon"><use xlink:href="#arrow-thin"/></svg></button>
+	</div>
+</div>
 <?php include('service-box.php'); ?>
 <div class="ideas-box">
 	<div class="box-title">Идеи интерьеров</div>
@@ -179,6 +231,35 @@
 		</div>
 	</div>
 	<a href="ideas.php" class="btn primary big big-width center">Посмотреть все идеи</a>
+</div>
+<div class="photogallery-box row">
+	<div class="box-title">Instagram</div>
+	<div class="box-text col s12 m12 l8 center">
+		<p class="xbig-text s-base light center-align">Присоединяйтесь к нам в социальных сетях. Узнавайте первыми о новых акциях и товарах, а так же ежедневные статьи об интерьерах и доме.</p>
+	</div>
+	<div class="photogallery">
+		<div class="gallery-item col s12 m4 l4">
+			<!-- миниатюры квадратные! -->
+			<a class="photo-item" href="#"><img src="images/content/shalash-thumb.jpg"/></a>
+		</div>
+		<div class="col s12 m4 l4 no-padding">
+			<div class="gallery-item col s12 m2 l2">
+				<a class="photo-item" href="#"><img src="images/content/livingroom-4-thumb.jpg"/></a>
+			</div>
+			<div class="gallery-item col s12 m2 l2">
+				<a class="photo-item" href="#"><img src="images/content/livingroom-3-thumb.jpg"/></a>
+			</div>
+			<div class="gallery-item col s12 m2 l2">
+				<a class="photo-item" href="#"><img src="images/content/dinningroom-2-thumb.jpg"/></a>
+			</div>
+			<div class="gallery-item col s12 m2 l2">
+				<a class="photo-item" href="#"><img src="images/content/table-thumb.jpg"/></a>
+			</div>
+		</div>
+		<div class="gallery-item col s12 m4 l4">
+			<a class="photo-item" href="#"><img src="images/content/livingroom-5-thumb.jpg"/></a>
+		</div>
+	</div>
 </div>
 <?php include('subscribe-box.php'); ?>
 <div class="fullwidth gray dark">

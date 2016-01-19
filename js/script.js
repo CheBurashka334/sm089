@@ -110,6 +110,8 @@ $(document).ready(function(){
 				width = width / $(this).attr('data-visible') + 10;
 			} else if(($(this).attr('data-visible') > 1) && ($(window).width() > 650)){
 				width = width / $(this).attr('data-visible');
+			} else if(($(this).attr('data-visible-m') > 1) && ($(window).width() <= 650)){
+				width = width / $(this).attr('data-visible-m');
 			}
 			if((!$(this).hasClass('carousel-mobile')) || ($(this).hasClass('carousel-mobile') && $(window).width() <= 650)){
 				$(this).jcarousel('items').css('width', Math.ceil(width) + 'px');
