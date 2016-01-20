@@ -24,7 +24,7 @@
 		<div class="carousel carousel-cols" data-visible="2">
 			<div class="carousel-inner row">
 				<div class="carousel-item employee">
-					<div class="employee-img col s12 m4 l4"><img src="images/content/team/worker-1.jpg"/></div>
+					<div class="employee-img col s4 offset-s4 m4 l4"><img src="images/content/team/worker-1.jpg"/></div>
 					<div class="employee-info col s12 m8 l6">
 						<div class="employee-name xbig-text medium">Антон Андреевич</div>
 						<div class="employee-position big-text light-color italic">Руководитель отдела</div>
@@ -33,7 +33,7 @@
 					</div>
 				</div>
 				<div class="carousel-item employee">
-					<div class="employee-img col s12 m4 l4"><img src="images/content/team/worker-2.jpg"/></div>
+					<div class="employee-img col s4 offset-s4 m4 l4"><img src="images/content/team/worker-2.jpg"/></div>
 					<div class="employee-info col s12 m8 l6">
 						<div class="employee-name xbig-text medium">Надежда Васильева</div>
 						<div class="employee-position big-text light-color italic">Менеджер</div>
@@ -42,7 +42,7 @@
 					</div>
 				</div>
 				<div class="carousel-item employee">
-					<div class="employee-img col s12 m4 l4"><img src="images/content/team/worker-3.jpg"/></div>
+					<div class="employee-img col s4 offset-s4 m4 l4"><img src="images/content/team/worker-3.jpg"/></div>
 					<div class="employee-info col s12 m8 l6">
 						<div class="employee-name xbig-text medium">Екатерина Антонова</div>
 						<div class="employee-position big-text light-color italic">Руководитель отдела</div>

@@ -1,5 +1,9 @@
 // header
 .header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 	background: color('red', 'light');
 	padding: 20px 0;
 	@media #{$medium-and-up}{
@@ -7,6 +11,7 @@
 	}
 	@media #{$large-and-up}{
 		padding: 30px 0;
+		position: relative;
 	}
 	.menu-box {
 		text-align: left;
@@ -31,6 +36,15 @@
 		}
 		.search-field-box {
 			display: none;
+			@media #{$small-only}{
+				&.active {
+					display: block;
+					position: absolute;
+					top: -5px;
+					right: 0;
+					width: 240/320*100vw;
+				}
+			}
 			.search-btn {
 				position: absolute;
 				top: 6px;
@@ -44,7 +58,7 @@
 			.search.inputtext {
 				min-width: 180px;
 				max-width: 240px;
-				width: 78%;
+				width: 100%;
 				padding: 0 45px 0 15px;
 				height: 40px;
 				line-height: 40px;
@@ -54,6 +68,9 @@
 				border-radius: 20px;
 				background: #fff;
 				float: right;
+				@media #{$medium-and-up}{
+					width: 78%;
+				}
 				@media #{$large-and-up}{
 					width: 85.7%;
 					padding: 0 50px 0 20px;
@@ -64,6 +81,22 @@
 			}
 			@media #{$large-and-up}{
 				margin-top: 10px;
+			}
+		}
+	}
+	.fixed & {
+		position: fixed;
+		z-index: 9997;
+		@media #{$large-and-up}{
+			position: relative;
+			z-index: 10;
+			+ .main-menu {
+				position: fixed;
+				z-index: 9999;
+				top: 0;
+				left: 0;
+				width: 100%;
+				transition: top .3s ease;
 			}
 		}
 	}

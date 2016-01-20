@@ -25,6 +25,7 @@
 	border-top:  1px solid color('bluegray', 'xlight');
 	border-bottom: 1px solid color('bluegray', 'xlight');
 	height: 55px;
+	background: #fff;
 	.container > .menu {
 		position: static;
 		display: table;
@@ -173,6 +174,69 @@
 		}
 		.menu-link {
 			padding: 0;
+		}
+	}
+}
+
+.catalog-fail-menu {
+	@media #{$small-only}{
+		margin-top: 20px;
+	}
+	.menu {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		align-items: stretch;
+		border-left:  1px solid #fff;
+	}
+	.menu-item {
+		max-width: 145px;
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: stretch;
+		@media #{$large-and-up}{
+			min-height: 60px;
+		}
+	}
+	.menu-link {
+		display: block;
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		padding: 16px 10px;
+		font-size: $small-text;
+		line-height: 16px;
+		text-align: left;
+		border-right: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		margin-bottom: -1px;
+		&:hover {
+			background: color('bluegray', 'medium');
+		}
+		@media #{$large-and-up}{
+			padding: 16px 9px;
+		}
+	}
+	.menu-link-back {
+		vertical-align: middle;
+		.icon {
+			fill:  $base-text-color;
+			transform: rotate(180deg);
+		}
+		.back-icon {
+			display: inline-block;
+			vertical-align: middle;
+			width: 16px;
+			height: 16px;
+			padding: 2px;
+			border: 1px solid $base-text-color;
+			border-radius: 50%;
+			margin-right: 6px;
+			@media #{$large-and-up}{
+				width: 20px;
+				height: 20px;
+				padding: 3px;
+			}
 		}
 	}
 }

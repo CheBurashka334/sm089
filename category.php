@@ -1,4 +1,39 @@
 <?php include('header.php'); ?>
+<div class="catalog-fail-menu fullwidth bluegray xlight hide-on-small-only">
+	<div class="container">
+		<ul class="menu">
+			<li class="menu-item"><a href="catalog.php" class="menu-link menu-link-back">
+				<span class="back-icon"><svg class="icon"><use xlink:href="#arrow-thin"/></svg></span> Назад
+			</a></li>
+			<li class="menu-item"><a href="subcategory.php" class="menu-link">Строительство стен и перегородок</a></li>
+			<li class="menu-item"><a href="subcategory.php" class="menu-link">Сухие строительные смеси</a></li>
+			<li class="menu-item"><a href="subcategory.php" class="menu-link">Пиломатериалы и листовые материалы</a></li>
+			<li class="menu-item"><a href="subcategory.php" class="menu-link">Изоляция</a></li>
+			<li class="menu-item"><a href="subcategory.php" class="menu-link">Кровля, профнастил и водостоки</a></li>
+			<li class="menu-item"><a href="subcategory.php" class="menu-link">Лакокрасочные материалы</a></li>
+			<li class="menu-item"><a href="subcategory.php" class="menu-link">Паталочные системы</a></li>
+			<li class="menu-item"><a href="subcategory.php" class="menu-link">Инструмент</a></li>
+			<li class="menu-item"><a href="subcategory.php" class="menu-link">Крепеж</a></li>
+		</ul>
+	</div>
+</div>
+<div class="catalog-fail-menu hide-on-med-and-up">
+	<!-- да блять, меню селектом, ну а чо -->
+	<div class="select-box hide-on-med-and-up">
+		<select id="menu-sel">
+			<option value="v1"><a href="subcategory.php">Строительство стен и перегородокы</a></option>
+			<option value="v2"><a href="subcategory.php">Сухие строительные смеси</a></option>
+			<option value="v3"><a href="subcategory.php">Пиломатериалы и листовые материалы</a></option>
+			<option value="v4"><a href="subcategory.php">Изоляция</a></option>
+			<option value="v5"><a href="subcategory.php">Кровля, профнастил и водостоки</a></option>
+			<option value="v6"><a href="subcategory.php">Лакокрасочные материалы</a></option>
+			<option value="v6"><a href="subcategory.php">Паталочные системы</a></option>
+			<option value="v6"><a href="subcategory.php">Инструмент</a></option>
+			<option value="v6"><a href="subcategory.php">Крепеж</a></option>
+		</select>
+		<div class="triangle"></div>
+	</div>
+</div>
 <div class="box-title">Общестрой</div>
 <div class="carousel carousel-base">
 	<div class="carousel-inner">

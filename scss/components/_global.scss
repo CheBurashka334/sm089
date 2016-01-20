@@ -75,8 +75,19 @@ html {
 
 .logo-box {
 	text-align: center;
+	.img-link {
+		display: block;
+		height: 100%;
+		max-height: 100%;
+		@media #{$small-only}{
+			max-height: 28px;
+		}
+	}
 	img {
-		max-height: 40px;
+		display: inline-block;
+		width: auto;
+		height: auto;
+		max-height: 28px;
 		@media #{$medium-and-up}{
 			max-height: 50px;
 		}

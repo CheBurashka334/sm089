@@ -41,7 +41,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="plate col m8 l6 no-padding">
+		<div class="plate col s12 m8 l6 no-padding">
 			<div class="col s6 m4 l3 category-block">
 				<div class="category yellow">
 					<div class="category-title">

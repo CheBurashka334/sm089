@@ -104,6 +104,9 @@
 	background-position: center;
 	background-size: cover;
 	cursor: pointer;
+	img {
+		width: 100%;
+	}
 }
 .vertical {
 	padding-top: $gutter-width;

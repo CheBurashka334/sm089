@@ -51,7 +51,6 @@
 		</div>
 	</div>
 </div>
-<!-- если главная - .page.home-page -->
 <div class="page">
 	<div class="header-wrapper">
 		<div class="header">
@@ -69,6 +68,7 @@
 						<button class="search-btn btn btn-icon right hide-on-med-and-up"><svg class="icon"><use xlink:href="#search"/></svg></button>
 						<div class="search-field-box">
 							<input type="text" class="search inputtext" id="h-search" />
+							<!-- я не знаю, цеплять ли на эту кнопку собсна поиск, или отправлять запрос по ентеру, но эта кнопка закрывает блок на мобильной версии -->
 							<button class="search-btn btn btn-icon right"><svg class="icon"><use xlink:href="#search"/></svg></button>
 						</div>
 					</div>

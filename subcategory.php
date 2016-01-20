@@ -1,4 +1,36 @@
 <?php include('header.php'); ?>
+<div class="catalog-fail-menu fullwidth bluegray xlight hide-on-small-only">
+	<div class="container">
+		<ul class="menu horizontal">
+			<li class="menu-item"><a href="category.php" class="menu-link menu-link-back">
+				<span class="back-icon"><svg class="icon"><use xlink:href="#arrow-thin"/></svg></span> Сантехника
+			</a></li>
+			<li class="menu-item"><a href="subcategory.php" class="menu-link">Ванны</a></li>
+			<li class="menu-item"><a href="subcategory.php" class="menu-link">Душевые кабины</a></li>
+			<li class="menu-item"><a href="subcategory.php" class="menu-link">Санфаянс</a></li>
+			<li class="menu-item"><a href="subcategory.php" class="menu-link">Мебель для ванной</a></li>
+			<li class="menu-item"><a href="subcategory.php" class="menu-link">Смесители</a></li>
+			<li class="menu-item"><a href="subcategory.php" class="menu-link">Системы отопления</a></li>
+			<li class="menu-item"><a href="subcategory.php" class="menu-link">Инженерная сантехника</a></li>
+		</ul>
+	</div>
+</div>
+<div class="catalog-fail-menu hide-on-med-and-up">
+	<!-- да блять, меню селектом, ну а чо -->
+	<div class="select-box hide-on-med-and-up">
+		<select id="menu-sel">
+			<option value="v1"><a href="subcategory.php">Ванны</a></option>
+			<option value="v2"><a href="subcategory.php">Душевые кабины</a></option>
+			<option value="v3"><a href="subcategory.php">Санфаянс</a></option>
+			<option value="v4"><a href="subcategory.php">Мебель для ванной</a></option>
+			<option value="v5"><a href="subcategory.php">Смесители</a></option>
+			<option value="v6"><a href="subcategory.php">Системы отопления</a></option>
+			<option value="v6"><a href="subcategory.php">Инженерная сантехника</a></option>
+		</select>
+		<div class="triangle"></div>
+	</div>
+</div>
+<div class="box-title">Ванны</div>
 <div class="carousel carousel-base">
 	<div class="carousel-inner">
 		<div class="carousel-item">
