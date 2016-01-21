@@ -10,6 +10,7 @@
 	<!--link rel="shortcut icon" href="favicon.ico" type="image/x-icon"-->
 	<!--link rel="shortcut icon" href="favicon.png" type="image/png"-->
 	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="https://cdn.rawgit.com/iserdmi/afterlag-js/2.0.2/dist/jquery.afterlag.min.js"></script>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script src="js/modernizr-custom.js"></script>
 	<script src="js/materialize.min.js"></script>

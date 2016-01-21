@@ -1,7 +1,10 @@
 $(document).ready(function(){
 	
 	$('#svg-placeholder').html(svg);
-	$('.page-aside').delay(500).css('opacity', 1);
+	$.afterlag(function() {
+		// чтобы устранить мигание боковой панели при загрузке страницы
+		$('.page-aside').delay(500).css('opacity', 1);
+	});
 	
 	$(window).scroll(function(){
 		if($(window).width() >= 990){
@@ -98,6 +101,7 @@ $(document).ready(function(){
 		e.stopPropagation();
 		box.removeClass('open');
 	});
+	
 	
 	// jcarousel
 	// http://sorgalla.com/jcarousel/docs/
