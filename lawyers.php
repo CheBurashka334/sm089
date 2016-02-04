@@ -46,7 +46,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="carousel-controlls hide-on-med-and-up">
+		<div class="carousel-controlls controlls-small hide-on-med-and-up">
 			<button class="prev"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
 			<button class="next"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
 		</div>

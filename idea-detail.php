@@ -15,11 +15,6 @@
 		<p><span class="color-red text-light">Плюсы:</span> цена ниже, чем у натурального камня. Он устойчив к бытовой химии и прост в уходе. Производители предлагают широкую цветовую гамму – от имитации натурального камня до цветочных узоров. Поверхность может быть матовой или глянцевой.</p>
 		<p><span class="color-red text-light">Минусы:</span> камень боится высоких температур. Если поставить горячую посуду на столешницу, может остаться след. От порезов ножом и при перемещении тяжелой посуды также появляются царапины. При чистке нежелательно использовать абразивные моющие средства. </p>
 		<div class="carousel carousel-content col s12 m10 l6 center no-padding">
-			<div class="carousel-controlls">
-				<button class="prev"><svg class="icon"><use xlink:href="#direction"/></svg></button>
-				<div class="indicator"><span class="current"></span>/<span class="total"></span></div>
-				<button class="next"><svg class="icon"><use xlink:href="#direction"/></svg></button>
-			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item">
 					<a href="#" class="carousel-link">
@@ -37,13 +32,17 @@
 					</a>
 				</div>
 			</div>
+			<div class="carousel-controlls controlls-base">
+				<button class="prev"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
+				<button class="next"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
+			</div>
 		</div>
 		<h2>2. Искусственный кварцевый камень (агломерат)</h2>
 		<p>Наиболее известная технология производства – Bretonstone, она запатентована в 1983 году. И представляет собой соединение частиц кварца и смолы. Внешне камень выглядит, как натуральный, но лишен его недостатков.</p>
 		<p><span class="color-red text-light">Плюсы:</span> не боится высоких температур. Вы можете смело ставить горячую посуду на столешницу, не опасаясь ее повредить. Она более устойчива к абразивным чистящим материалам и моющим жидкостям. Отличается долговечностью</p>
 		<p><span class="color-red text-light">Минусы:</span> все технологические отверстия должны быть сделаны заранее на фабрике на специальном оборудовании. Отреставрировать в домашних условиях ее не получится. У столешницы значительный вес и цена более высокая, по сравнению с акрилом. А в местах стыковки кварцевых плит может появится видимый шов.</p>
 		<div class="carousel carousel-content col s12 m10 l6 center no-padding">
-			<div class="carousel-controlls">
+			<div class="carousel-controlls controlls-top">
 				<button class="prev"><svg class="icon"><use xlink:href="#direction"/></svg></button>
 				<div class="indicator"><span class="current"></span>/<span class="total"></span></div>
 				<button class="next"><svg class="icon"><use xlink:href="#direction"/></svg></button>

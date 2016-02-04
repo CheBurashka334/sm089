@@ -5573,7 +5573,7 @@ select option {
   fill: #c54a3d;
 }
 /* line 130, scss/components/_carousel.scss */
-.carousel-base .carousel-controlls, .carousel-stage .carousel-controlls {
+.carousel-controlls.controlls-base {
   position: absolute;
   width: 100%;
   height: 30px;
@@ -5584,15 +5584,14 @@ select option {
 }
 @media only screen and (min-width: 651px) {
   /* line 130, scss/components/_carousel.scss */
-  .carousel-base .carousel-controlls, .carousel-stage .carousel-controlls {
+  .carousel-controlls.controlls-base {
     height: 50px;
     margin-top: -25px;
   }
 }
-/* line 143, scss/components/_carousel.scss */
-.carousel-base .carousel-controlls .prev,
-.carousel-base .carousel-controlls .next, .carousel-stage .carousel-controlls .prev,
-.carousel-stage .carousel-controlls .next {
+/* line 142, scss/components/_carousel.scss */
+.carousel-controlls.controlls-base .prev,
+.carousel-controlls.controlls-base .next {
   position: absolute;
   top: 0;
   width: 30px;
@@ -5603,62 +5602,59 @@ select option {
   color: #fff;
 }
 @media only screen and (min-width: 651px) {
-  /* line 143, scss/components/_carousel.scss */
-  .carousel-base .carousel-controlls .prev,
-  .carousel-base .carousel-controlls .next, .carousel-stage .carousel-controlls .prev,
-  .carousel-stage .carousel-controlls .next {
+  /* line 142, scss/components/_carousel.scss */
+  .carousel-controlls.controlls-base .prev,
+  .carousel-controlls.controlls-base .next {
     width: 50px;
     padding: 10px;
   }
 }
 /* line 157, scss/components/_carousel.scss */
-.carousel-base .carousel-controlls .prev .icon,
-.carousel-base .carousel-controlls .next .icon, .carousel-stage .carousel-controlls .prev .icon,
-.carousel-stage .carousel-controlls .next .icon {
-  fill: #fff;
-}
-/* line 161, scss/components/_carousel.scss */
-.carousel-base .carousel-controlls .prev, .carousel-stage .carousel-controlls .prev {
+.carousel-controlls.controlls-base .prev {
   left: 0;
 }
-/* line 164, scss/components/_carousel.scss */
-.carousel-base .carousel-controlls .next, .carousel-stage .carousel-controlls .next {
+/* line 160, scss/components/_carousel.scss */
+.carousel-controlls.controlls-base .next {
   right: 0;
 }
-/* line 168, scss/components/_carousel.scss */
-.carousel-content .carousel-controlls {
+/* line 163, scss/components/_carousel.scss */
+.carousel-controlls.controlls-base .icon {
+  fill: #fff;
+}
+/* line 167, scss/components/_carousel.scss */
+.carousel-controlls.controlls-top {
   width: 100%;
   height: 18px;
   margin-bottom: 18px;
   text-align: center;
   vertical-align: middle;
 }
-/* line 174, scss/components/_carousel.scss */
-.carousel-content .carousel-controlls .prev,
-.carousel-content .carousel-controlls .next,
-.carousel-content .carousel-controlls .indicator {
+/* line 173, scss/components/_carousel.scss */
+.carousel-controlls.controlls-top .prev,
+.carousel-controlls.controlls-top .next,
+.carousel-controlls.controlls-top .indicator {
   display: inline-block;
   font-size: 18px;
   line-height: 1;
   color: #484848;
 }
-/* line 182, scss/components/_carousel.scss */
-.carousel-content .carousel-controlls .icon {
+/* line 181, scss/components/_carousel.scss */
+.carousel-controlls.controlls-top .icon {
   fill: #484848;
 }
-/* line 185, scss/components/_carousel.scss */
-.carousel-content .carousel-controlls .prev,
-.carousel-content .carousel-controlls .next {
+/* line 184, scss/components/_carousel.scss */
+.carousel-controlls.controlls-top .prev,
+.carousel-controlls.controlls-top .next {
   width: 28px;
   height: 100%;
   padding: 0 5px;
 }
-/* line 191, scss/components/_carousel.scss */
-.carousel-content .carousel-controlls .indicator {
+/* line 190, scss/components/_carousel.scss */
+.carousel-controlls.controlls-top .indicator {
   margin: 0 5px;
 }
-/* line 195, scss/components/_carousel.scss */
-.carousel-cols .carousel-controlls, .carousel-mobile .carousel-controlls {
+/* line 194, scss/components/_carousel.scss */
+.carousel-controlls.controlls-small, .carousel-controlls.controlls-thin {
   position: absolute;
   top: 40px;
   left: 0;
@@ -5666,57 +5662,57 @@ select option {
   height: 16px;
   z-index: 3;
 }
-/* line 203, scss/components/_carousel.scss */
-.carousel-cols .carousel-controlls .prev,
-.carousel-cols .carousel-controlls .next, .carousel-mobile .carousel-controlls .prev,
-.carousel-mobile .carousel-controlls .next {
+/* line 201, scss/components/_carousel.scss */
+.carousel-controlls.controlls-small .prev, .carousel-controlls.controlls-thin .prev,
+.carousel-controlls.controlls-small .next,
+.carousel-controlls.controlls-thin .next {
   position: absolute;
   top: 0;
   width: 16px;
   height: 100%;
 }
-/* line 210, scss/components/_carousel.scss */
-.carousel-cols .carousel-controlls .icon, .carousel-mobile .carousel-controlls .icon {
+/* line 208, scss/components/_carousel.scss */
+.carousel-controlls.controlls-small .icon, .carousel-controlls.controlls-thin .icon {
   fill: #2d2d2d;
 }
-/* line 213, scss/components/_carousel.scss */
-.carousel-cols .carousel-controlls .prev, .carousel-mobile .carousel-controlls .prev {
+/* line 211, scss/components/_carousel.scss */
+.carousel-controlls.controlls-small .prev, .carousel-controlls.controlls-thin .prev {
   left: 0;
 }
-/* line 216, scss/components/_carousel.scss */
-.carousel-cols .carousel-controlls .next, .carousel-mobile .carousel-controlls .next {
+/* line 214, scss/components/_carousel.scss */
+.carousel-controlls.controlls-small .next, .carousel-controlls.controlls-thin .next {
   right: 0;
 }
-/* line 220, scss/components/_carousel.scss */
-.carousel-logo .carousel-controlls {
+/* line 218, scss/components/_carousel.scss */
+.carousel-controlls.controlls-thin {
   top: 50%;
   margin-top: -8px;
 }
-/* line 223, scss/components/_carousel.scss */
-.carousel-logo .carousel-controlls .icon {
+/* line 222, scss/components/_carousel.scss */
+.carousel-controlls.controlls-thin .icon {
   fill: #b8b8b8;
 }
 @media only screen and (min-width: 651px) {
-  /* line 220, scss/components/_carousel.scss */
-  .carousel-logo .carousel-controlls {
+  /* line 218, scss/components/_carousel.scss */
+  .carousel-controlls.controlls-thin {
     height: 30px;
     margin-top: -15px;
   }
-  /* line 229, scss/components/_carousel.scss */
-  .carousel-logo .carousel-controlls .prev,
-  .carousel-logo .carousel-controlls .next {
+  /* line 228, scss/components/_carousel.scss */
+  .carousel-controlls.controlls-thin .prev,
+  .carousel-controlls.controlls-thin .next {
     width: 25px;
   }
 }
 @media only screen and (min-width: 991px) {
-  /* line 235, scss/components/_carousel.scss */
-  .carousel-logo .carousel-controlls .prev,
-  .carousel-logo .carousel-controlls .next {
+  /* line 234, scss/components/_carousel.scss */
+  .carousel-controlls.controlls-thin .prev,
+  .carousel-controlls.controlls-thin .next {
     width: 80px;
   }
 }
 
-/* line 243, scss/components/_carousel.scss */
+/* line 242, scss/components/_carousel.scss */
 .vertical .carousel-controlls .prev,
 .vertical .carousel-controlls .next {
   left: 50%;
@@ -5725,14 +5721,14 @@ select option {
   width: 2em;
   height: 2em;
 }
-/* line 251, scss/components/_carousel.scss */
+/* line 250, scss/components/_carousel.scss */
 .vertical .carousel-controlls .prev {
   top: -0.5em;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-/* line 255, scss/components/_carousel.scss */
+/* line 254, scss/components/_carousel.scss */
 .vertical .carousel-controlls .next {
   top: auto;
   bottom: -0.5em;
@@ -5741,28 +5737,73 @@ select option {
           transform: rotate(-90deg);
 }
 
-/* line 261, scss/components/_carousel.scss */
+/* line 260, scss/components/_carousel.scss */
 .carousel-pagination {
   width: 100%;
-  margin-top: 25px;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
   text-align: center;
   vertical-align: middle;
+  z-index: 3;
 }
-/* line 266, scss/components/_carousel.scss */
+/* line 268, scss/components/_carousel.scss */
 .carousel-pagination .pagination-link {
-  margin: 0 3px;
   display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 7px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background: #fff;
+  will-change: background;
+  -webkit-transition: background .3s ease;
+          transition: background .3s ease;
+}
+/* line 278, scss/components/_carousel.scss */
+.carousel-pagination .pagination-link.active {
+  background: #c0392b;
+}
+/* line 283, scss/components/_carousel.scss */
+.carousel-pagination.pagin-yellow .pagination-link.active {
+  background: #f39c12;
+}
+/* line 283, scss/components/_carousel.scss */
+.carousel-pagination.pagin-green .pagination-link.active {
+  background: #27ae60;
+}
+/* line 283, scss/components/_carousel.scss */
+.carousel-pagination.pagin-blue .pagination-link.active {
+  background: #2980b9;
+}
+/* line 283, scss/components/_carousel.scss */
+.carousel-pagination.pagin-darkblue .pagination-link.active {
+  background: #34495e;
+}
+/* line 283, scss/components/_carousel.scss */
+.carousel-pagination.pagin-violet .pagination-link.active {
+  background: #8e44ad;
+}
+/* line 287, scss/components/_carousel.scss */
+.carousel-cols .carousel-pagination {
+  position: relative;
+  top: 0;
+  margin-top: 25px;
+}
+/* line 291, scss/components/_carousel.scss */
+.carousel-cols .carousel-pagination .pagination-link {
+  margin: 0 3px;
   width: 11px;
   height: 11px;
-  border-radius: 50%;
+  border: 0;
   background: #c0392b;
   opacity: 1;
   will-change: opacity;
   -webkit-transition: opacity .3s ease;
           transition: opacity .3s ease;
 }
-/* line 276, scss/components/_carousel.scss */
-.carousel-pagination .pagination-link.active {
+/* line 300, scss/components/_carousel.scss */
+.carousel-cols .carousel-pagination .pagination-link.active {
   opacity: 0.3;
 }
 

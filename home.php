@@ -11,10 +11,11 @@
 			<a href="#" class="carousel-link" style="background-image: url('images/content/slide-1.jpg');"></a>
 		</div>
 	</div>
-	<div class="carousel-controlls">
+	<div class="carousel-controlls controlls-base">
 		<button class="prev"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
 		<button class="next"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
 	</div>
+	<div class="carousel-pagination pagin-yellow hide-on-small-only"></div>
 </div>
 <div class="categories-box">
 	<div class="categories-list row">
@@ -187,7 +188,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="carousel-controlls">
+	<div class="carousel-controlls controlls-thin">
 		<button class="prev"><svg class="icon"><use xlink:href="#arrow-thin"/></svg></button>
 		<button class="next"><svg class="icon"><use xlink:href="#arrow-thin"/></svg></button>
 	</div>

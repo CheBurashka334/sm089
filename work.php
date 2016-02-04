@@ -51,7 +51,7 @@
 					</div>
 				</div>
 				<div class="carousel-item employee">
-					<div class="employee-img col s12 m4 l4"><img src="images/content/team/worker-4.jpg"/></div>
+					<div class="employee-img col s4 offset-s4 m4 l4"><img src="images/content/team/worker-4.jpg"/></div>
 					<div class="employee-info col s12 m8 l6">
 						<div class="employee-name xbig-text medium">Сергей Петрович</div>
 						<div class="employee-position big-text light-color italic">Менеджер</div>
@@ -60,7 +60,7 @@
 					</div>
 				</div>
 				<div class="carousel-item employee">
-					<div class="employee-img col s12 m4 l4"><img src="images/content/team/worker-5.jpg"/></div>
+					<div class="employee-img col s4 offset-s4 m4 l4"><img src="images/content/team/worker-5.jpg"/></div>
 					<div class="employee-info col s12 m8 l6">
 						<div class="employee-name xbig-text medium">Константин Александрович</div>
 						<div class="employee-position big-text light-color italic">Руководитель торгового сектора</div>
@@ -69,7 +69,7 @@
 					</div>
 				</div>
 				<div class="carousel-item employee">
-					<div class="employee-img col s12 m4 l4"><img src="images/content/team/worker-6.jpg"/></div>
+					<div class="employee-img col s4 offset-s4 m4 l4"><img src="images/content/team/worker-6.jpg"/></div>
 					<div class="employee-info col s12 m8 l6">
 						<div class="employee-name xbig-text medium">Надежда Васильева</div>
 						<div class="employee-position big-text light-color italic">менеджер по приемке</div>
@@ -78,7 +78,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="carousel-controlls hide-on-med-and-up">
+			<div class="carousel-controlls controlls-small hide-on-med-and-up">
 				<button class="prev"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
 				<button class="next"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
 			</div>
@@ -93,7 +93,7 @@
 				<div class="carousel-item" style="background-image: url('images/content/writing-men.jpg');"></div>
 				<div class="carousel-item" style="background-image: url('images/content/working-woman.jpg');"></div>
 			</div>
-			<div class="carousel-controlls">
+			<div class="carousel-controlls controlls-base">
 				<button class="prev"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
 				<button class="next"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
 			</div>
